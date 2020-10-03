@@ -156,6 +156,7 @@ header.header {
     color: #fff; }
   .banner_worp .banner .main_banner .banner_pra {
     max-width: 690px;
+    width: 100%;
     font-size: 14px;
     margin-bottom: 43px;
     font-weight: 400;
