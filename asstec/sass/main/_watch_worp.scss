@@ -1,0 +1,82 @@
+.watch_worp {
+    background-image   : url(../imgs/video_image.jpg);
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+    min-height         : 630px;
+    position: relative;
+    padding: 180px 0;
+    &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000ed;
+        position: absolute;
+        opacity: 0.9;
+    }
+    .watchmain {
+        position: relative;
+        .watch {
+            .watch_hed {
+                font-size: 24px;
+                font-weight: 600;
+                text-transform: capitalize;
+                margin-bottom: 12px;
+                color: #fff;
+            }
+            .watchHed {
+                font-size: 36px;
+                margin-top: 10px;
+                font-weight: 600;
+                color: #fff;
+            }
+               
+            .watch_pra {
+                max-width: 619px;
+                font-size: 16px;
+                margin-bottom: 43px;
+                font-weight: 400;
+                color: #fff;
+
+            }
+            .bnarbtn {
+                box-shadow: none;
+                border: 1px solid #eb1b2b;
+                color: #fff;
+                background: #eb1b2b;
+                padding: 10px 36px;
+                font-weight: 600;
+                text-transform: uppercase;
+                box-shadow: none;
+                transition: all 0.5s;
+                margin-right: 40px;
+                border-radius: 50px;
+                text-decoration: none;
+                display: inline-block;
+                &:hover {
+                    background: #fff;
+                    border: 1px solid #fff;
+                    color: #eb1b2b;
+                }
+            }
+        }
+        .video_main {
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            width: 24%;
+            transform: translateY(-50%);
+            .viveoLink {
+                font-size: 26px;
+                margin-top: 9px;
+                text-decoration: none;
+                color: #fff;
+                font-weight: 700;
+                margin-right: 15px;
+
+            }
+        }
+    }
+}

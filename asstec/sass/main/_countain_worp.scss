@@ -1,0 +1,32 @@
+.countain_worp {
+    padding: 100px 0;
+    background: #000;
+    .main_counting {
+        text-align: center;
+        text-align: center;
+        border: 3px solid #fff;
+        padding: 50px;
+        transition:  all 0.5s;
+        .icon_count {
+            font-size: 30px;
+            color: #fff;
+        }
+        .pra_count {
+            font-size: 17px;
+            font-weight: 600;
+            color: #fff;
+            margin: 15px 0;
+            
+        }
+        .counting {
+            font-size: 40px;
+            font-weight: 700;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+        &:hover {
+            background-color: #eb1b2b;
+            border: 3px solid #eb1b2b;
+        }
+    }
+}

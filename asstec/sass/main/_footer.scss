@@ -1,0 +1,150 @@
+.footer_worp {
+    background: #1a1a1a;
+    padding: 66px 0 90px;
+    .Newsletter {
+        .hednews {
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .pranews {
+            font-size: 12px;
+            max-width: 220px;
+            margin-bottom: 20px;
+            font-weight: 400; 
+            color: #fff;
+        }
+        .mail_formet {
+            .inputfrom {
+                position: relative;
+                .mail_from {
+                    border: 1px solid #ddd;
+                    padding: 8px 26px 10px;
+                    background: #fff;
+                    color: #eb1b2b;
+                    box-shadow: none;
+                    outline: none;
+                    border-bottom-left-radius: 2px;
+                    border-top-left-radius: 2px;
+                        &::placeholder {
+                        color: #000;
+                    }
+                }
+                .buton {
+                    border: 1px solid #eb1b2b;
+                    position: absolute;
+                    box-shadow: none;
+                    outline: none;
+                    background: #eb1b2b;
+                    color: #fff;
+                    padding: 9px 15px 10px;
+                    border-radius: 0;
+                    top: 0;
+                    right: 0;
+                    border-bottom-right-radius: 2px;
+                    border-top-right-radius: 2px;
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .media {
+            margin-bottom: 30px;
+            .imgcol {
+                width: 100px;
+                height: 80px;
+            }
+            .media-body {
+                a {
+                    text-decoration: none;
+                    .modalhed {
+                        color: #fff;
+                        font-weight: 600;
+                        font-size: 16px;
+                        &:hover {
+                            color: #eb1b2b;
+                        }
+                        margin: 0;
+                    
+                    }
+                }
+                .mdspan  {
+                    color: #fff;
+                    font-size: 12px;
+                }
+            }
+            
+        }
+        .helpLink {
+            .helplmanu {
+                list-style: none;
+                .list-itme {
+                    padding: 3px 0;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    &:hover {
+                        a {
+                            color: #eb1b2b;
+                        }
+                    }
+                }
+            }
+        }
+        .Instagram {
+            .castomRow {
+                margin-left: 0;
+                margin-right: 0;
+                .castomCol {
+                    padding: 0;
+                    .itme_img {
+                        .imgangor {
+                            .img {
+                                width: 90px;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.footer {
+    background: #000;
+    padding: 30px 0;
+    .futtrbottom {
+        color: #fff;
+        margin: 0;
+    }
+    .footer_bottom {
+        text-align: right;
+        .bottom_fter {
+            list-style: none;
+            display: inline-flex;
+            margin: 0;
+            .list-itme {
+                padding: 0 10px;
+                
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    transition: all 0.5s;
+                }
+                &:hover {
+                    a {
+                        color: #eb1b2b;
+                    }
+                }
+            }
+        }
+    }
+}

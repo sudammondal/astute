@@ -1,0 +1,35 @@
+.about_us {
+    padding: 100px 0;
+    .about_main {
+        .about_sub {
+            font-size: 18px;
+            font-weight: 600;
+
+        }
+        .about_head {
+            margin-top: 1px;
+            margin-bottom: 26px;
+            font-size: 35px;
+            font-weight: 700;
+            span {
+                color: #eb1b2b;
+            }
+        }
+        .aboutPrea {
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 20px;
+
+        }
+        .aboutPrea2 {
+            font-size: 16px;
+            line-height: 25px;
+            margin-bottom: 20px;
+
+        }
+        .sigensar {
+            margin: 20px 0;
+
+        }
+    }
+}
