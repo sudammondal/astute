@@ -507,7 +507,8 @@ header.header {
           display: block;
           -webkit-transition: all 0.5s;
           -o-transition: all 0.5s;
-          transition: all 0.5s; }
+          transition: all 0.5s;
+          margin: 0; }
         .Media_filtring .custom_col .media_overlay .img_overlay .overlayhed {
           position: absolute;
           left: 100%;
