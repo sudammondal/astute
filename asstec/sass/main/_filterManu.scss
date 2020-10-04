@@ -3,7 +3,7 @@
         text-align: center;
         .isotopmein {
             list-style: none;
-            margin-bottom: 50px;
+            margin-bottom: 0px;
             padding: 0;
             .list_item {
                 font-size: 13px;
@@ -17,6 +17,7 @@
                 border-color: #eb1b2b;
                 background-color: transparent;
                 margin: 0 5px 0;
+                transition: 0.5s;
                 &.active,
                 &:hover {
                     background-color: #eb1b2b;

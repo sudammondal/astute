@@ -448,7 +448,7 @@ header.header {
   text-align: center; }
   .manu_Iteme .isotop_manu .isotopmein {
     list-style: none;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     padding: 0; }
     .manu_Iteme .isotop_manu .isotopmein .list_item {
       font-size: 13px;
@@ -461,13 +461,16 @@ header.header {
       padding: 4px 28px;
       border-color: #eb1b2b;
       background-color: transparent;
-      margin: 0 5px 0; }
+      margin: 0 5px 0;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
       .manu_Iteme .isotop_manu .isotopmein .list_item.active, .manu_Iteme .isotop_manu .isotopmein .list_item:hover {
         background-color: #eb1b2b;
         color: #fff; }
 
 .Media_filtring {
-  padding: 130px 0;
+  padding: 50px 0;
   overflow-x: hidden; }
   .Media_filtring .custom_col {
     overflow: hidden; }
@@ -581,8 +584,8 @@ header.header {
       -webkit-box-shadow: none;
       box-shadow: none;
       outline: none;
-      border-bottom-left-radius: 2px;
-      border-top-left-radius: 2px; }
+      width: 100%;
+      border-radius: 2px; }
       .footer_worp .Newsletter .mail_formet .inputfrom .mail_from::-webkit-input-placeholder {
         color: #000; }
       .footer_worp .Newsletter .mail_formet .inputfrom .mail_from:-ms-input-placeholder {

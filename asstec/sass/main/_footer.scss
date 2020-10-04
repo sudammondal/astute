@@ -27,8 +27,8 @@
                     color: #eb1b2b;
                     box-shadow: none;
                     outline: none;
-                    border-bottom-left-radius: 2px;
-                    border-top-left-radius: 2px;
+                    width: 100%;
+                    border-radius: 2px;
                         &::placeholder {
                         color: #000;
                     }
@@ -46,7 +46,7 @@
                     right: 0;
                     border-bottom-right-radius: 2px;
                     border-top-right-radius: 2px;
-                    i{
+                    i {
                         font-size: 18px;
                     }
                 }
