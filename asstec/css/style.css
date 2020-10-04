@@ -274,7 +274,7 @@ header.header {
       height: 100%;
       top: 3px;
       right: 55px;
-      background: red;
+      background: #eb1b2b;
       content: "";
       position: absolute; }
     .Mission .mainMission .MissionTitle::after {
@@ -282,7 +282,7 @@ header.header {
       height: 100%;
       top: 3px;
       right: 50px;
-      background: red;
+      background: #eb1b2b;
       content: "";
       position: absolute; }
     .Mission .mainMission .MissionTitle .Missionsub {
@@ -424,7 +424,7 @@ header.header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 82px 0 100px; }
+  padding: 82px 0 0px; }
   .Media_worp .media_header .media_hed {
     font-size: 35px;
     font-weight: 700;
@@ -443,6 +443,117 @@ header.header {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 49px; }
+
+.manu_Iteme .isotop_manu {
+  text-align: center; }
+  .manu_Iteme .isotop_manu .isotopmein {
+    list-style: none;
+    margin-bottom: 50px;
+    padding: 0; }
+    .manu_Iteme .isotop_manu .isotopmein .list_item {
+      font-size: 13px;
+      font-weight: 500;
+      display: inline-block;
+      border: 1px solid #f3eaea;
+      border-radius: 30px;
+      text-transform: uppercase;
+      color: #333;
+      padding: 4px 28px;
+      border-color: #eb1b2b;
+      background-color: transparent;
+      margin: 0 5px 0; }
+      .manu_Iteme .isotop_manu .isotopmein .list_item.active, .manu_Iteme .isotop_manu .isotopmein .list_item:hover {
+        background-color: #eb1b2b;
+        color: #fff; }
+
+.Media_filtring {
+  padding: 130px 0;
+  overflow-x: hidden; }
+  .Media_filtring .custom_col {
+    overflow: hidden; }
+    .Media_filtring .custom_col .media_overlay {
+      position: relative; }
+      .Media_filtring .custom_col .media_overlay .litebox {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        height: 50px;
+        width: 50px;
+        background-color: #eb1b2b;
+        border-radius: 50px; }
+        .Media_filtring .custom_col .media_overlay .litebox a {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          text-decoration: none;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          text-align: center;
+          color: #fff; }
+      .Media_filtring .custom_col .media_overlay .img_overlay {
+        position: relative; }
+        .Media_filtring .custom_col .media_overlay .img_overlay .image {
+          display: block;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        .Media_filtring .custom_col .media_overlay .img_overlay .overlayhed {
+          position: absolute;
+          left: 100%;
+          top: 0;
+          bottom: 0;
+          overflow: hidden;
+          height: 100%;
+          width: 0;
+          -webkit-transition: .5s ease;
+          -o-transition: .5s ease;
+          transition: .5s ease; }
+          .Media_filtring .custom_col .media_overlay .img_overlay .overlayhed .text {
+            white-space: nowrap;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 70%;
+            background-color: rgba(43, 14, 14, 0.747);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            padding: 20px; }
+            .Media_filtring .custom_col .media_overlay .img_overlay .overlayhed .text .hoverhead {
+              margin: 0;
+              font-size: 16px;
+              line-height: 1.2; }
+              .Media_filtring .custom_col .media_overlay .img_overlay .overlayhed .text .hoverhead a {
+                color: #fff;
+                text-decoration: none; }
+            .Media_filtring .custom_col .media_overlay .img_overlay .overlayhed .text .hoverpra {
+              color: #fff;
+              font-size: 12px;
+              margin: 0; }
+    .Media_filtring .custom_col:hover .media_overlay .img_overlay {
+      position: relative; }
+      .Media_filtring .custom_col:hover .media_overlay .img_overlay .image {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+      .Media_filtring .custom_col:hover .media_overlay .img_overlay .overlayhed {
+        left: 0;
+        width: 100%; }
+      .Media_filtring .custom_col:hover .media_overlay .img_overlay .text {
+        width: 100%;
+        top: 50%;
+        left: 70%;
+        background-color: rgba(43, 14, 14, 0.747); }
 
 .footer_worp {
   background: #1a1a1a;

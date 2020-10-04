@@ -1,0 +1,105 @@
+.Media_filtring {
+    padding: 130px 0;
+    overflow-x: hidden;
+    .custom_col {
+        overflow: hidden;
+        .media_overlay {
+            position: relative;
+            .litebox {
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
+                height: 50px;
+                width: 50px;
+                background-color : #eb1b2b;
+                border-radius: 50px;
+                a {
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: inline-flex;
+                    text-decoration: none;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+            .img_overlay {
+                position: relative;
+                .image {
+                    display: block;
+                    transition: all 0.5s;
+                    
+                }
+                .overlayhed {
+                    position: absolute;
+                    left: 100%;
+                    top: 0;
+                    bottom: 0;
+                    overflow: hidden;
+                    height: 100%;
+                    width:0;
+                    transition: .5s ease;
+                    .text {
+                        white-space: nowrap; 
+                        color: white;
+                        font-size: 20px;
+                        position: absolute;
+                        overflow: hidden;
+                        top: 50%;
+                        left: 70%;
+                        background-color: rgba(43, 14, 14, 0.747);
+                        transform: translate(-50%, -50%);
+                        padding:20px;
+                        .hoverhead {
+                            margin: 0;
+                            font-size: 16px;
+                            line-height: 1.2;
+                            a {
+                                color: #fff;
+                                text-decoration: none;
+                            }
+                            
+
+                        }
+                        .hoverpra {
+                            color: #fff;
+                            font-size: 12px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        &:hover {
+            .media_overlay {
+                .img_overlay {
+                    position: relative;
+                    .image {
+                        transform: scale(1.2);
+                    }
+                    
+                    .overlayhed {
+                        left: 0;
+                        width: 100%;
+                    }
+                    .text {
+                        width: 100%;
+                        top: 50%;
+                        left: 70%;
+                        background-color: rgba(43, 14, 14, 0.747);
+                    }
+                    
+                   
+                }
+                
+            }
+            
+        }
+    }
+    
+}
