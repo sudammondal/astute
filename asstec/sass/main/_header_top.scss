@@ -5,14 +5,14 @@
         display: flex;
         .contac {
             &.margin_left {
-                margin-left: 20px;
+                margin-left: 21px;
             }
             a {
                 text-decoration: none;
-                font-size: 16px;
+                font-size: 15px;
                 color: #fff;
                 i {
-                    font-size: 13px;
+                    font-size: 14px;
                     color: #eb1b2b;
                     margin-right: 10px;
                 }
@@ -28,9 +28,14 @@
                 .icons {
                     color: #fff;
                     text-decoration: none;
-                    padding: 8px;
+                    padding: 0 8px;
                     &:hover {
                         color: #eb1b2b;
+                    }
+                    &:last-child {
+                        paddding {
+                            padding-right: 0px;
+                        }
                     }
                 }
             }
