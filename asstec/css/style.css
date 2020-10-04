@@ -32,9 +32,10 @@ body {
       font-size: 15px;
       color: #fff; }
       .header_top .top_head .contac a i {
-        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
         color: #eb1b2b;
-        margin-right: 10px; }
+        margin-right: 7px; }
     .header_top .top_head .icon_manu {
       margin: 0;
       padding: 0;
