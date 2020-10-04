@@ -31,7 +31,8 @@
                 .image {
                     display: block;
                     transition: all 0.5s;
-                    margin: 0;
+                    max-width: 100%;
+                    width: 100%;
                     
                 }
                 .overlayhed {
@@ -43,6 +44,7 @@
                     height: 100%;
                     width:0;
                     transition: .5s ease;
+                    transition: all 0.5s;
                     .text {
                         white-space: nowrap; 
                         color: white;
@@ -51,7 +53,7 @@
                         overflow: hidden;
                         top: 50%;
                         left: 70%;
-                        background-color: rgba(43, 14, 14, 0.747);
+                        background-color: #eb1b2bc9;
                         transform: translate(-50%, -50%);
                         padding:20px;
                         .hoverhead {
@@ -81,7 +83,7 @@
                 .img_overlay {
                     position: relative;
                     .image {
-                        transform: scale(1.2);
+                        transform: scale(1.1);
                     }
                     
                     .overlayhed {
@@ -92,7 +94,7 @@
                         width: 100%;
                         top: 50%;
                         left: 70%;
-                        background-color: rgba(43, 14, 14, 0.747);
+                        background-color: #eb1b2bc9;
                     }
                     
                    

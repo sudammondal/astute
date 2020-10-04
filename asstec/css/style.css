@@ -145,8 +145,8 @@ header.header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 630px;
-  position: relative; }
+  position: relative;
+  padding: 208px 0 198px; }
   .banner_worp::before {
     content: "";
     top: 0;
@@ -160,52 +160,53 @@ header.header {
     margin: 0;
     font-size: 66px;
     font-weight: 600;
-    margin: 205px 0 10px 0;
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 10px; }
   .banner_worp .banner .main_banner .banner_pra {
     max-width: 690px;
     width: 100%;
     font-size: 14px;
-    margin-bottom: 43px;
     font-weight: 400;
     line-height: 1.6;
     color: #fff;
-    margin-left: 5px; }
+    margin: 0 0 43px 5px; }
   .banner_worp .banner .main_banner .banner_button {
+    font-size: 14px;
     -webkit-box-shadow: none;
     box-shadow: none;
     border: 1px solid #eb1b2b;
     color: #fff;
     background-color: #eb1b2b;
-    padding: 10px 36px;
-    font-weight: 600;
+    padding: 9px 37px;
+    font-weight: 500;
     text-transform: uppercase;
     box-shadow: none;
     outline: none;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    margin-right: 40px;
     border-radius: 50px;
     text-decoration: none;
-    display: inline-block; }
+    display: inline-block;
+    margin-right: 8px; }
     .banner_worp .banner .main_banner .banner_button:hover {
       background: transparent;
       border: 1px solid #fff; }
   .banner_worp .banner .main_banner .bnarbtn {
+    font-size: 14px;
+    outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
     border: 1px solid #fff;
     color: #fff;
     background: transparent;
-    padding: 10px 36px;
-    font-weight: 600;
+    padding: 9px 37px;
+    font-weight: 500;
     text-transform: uppercase;
     box-shadow: none;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    margin-right: 40px;
     border-radius: 50px;
     text-decoration: none;
     display: inline-block; }
@@ -508,7 +509,8 @@ header.header {
           -webkit-transition: all 0.5s;
           -o-transition: all 0.5s;
           transition: all 0.5s;
-          margin: 0; }
+          max-width: 100%;
+          width: 100%; }
         .Media_filtring .custom_col .media_overlay .img_overlay .overlayhed {
           position: absolute;
           left: 100%;
@@ -519,7 +521,10 @@ header.header {
           width: 0;
           -webkit-transition: .5s ease;
           -o-transition: .5s ease;
-          transition: .5s ease; }
+          transition: .5s ease;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
           .Media_filtring .custom_col .media_overlay .img_overlay .overlayhed .text {
             white-space: nowrap;
             color: white;
@@ -528,7 +533,7 @@ header.header {
             overflow: hidden;
             top: 50%;
             left: 70%;
-            background-color: rgba(43, 14, 14, 0.747);
+            background-color: #eb1b2bc9;
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -547,9 +552,9 @@ header.header {
     .Media_filtring .custom_col:hover .media_overlay .img_overlay {
       position: relative; }
       .Media_filtring .custom_col:hover .media_overlay .img_overlay .image {
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2); }
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
       .Media_filtring .custom_col:hover .media_overlay .img_overlay .overlayhed {
         left: 0;
         width: 100%; }
@@ -557,7 +562,7 @@ header.header {
         width: 100%;
         top: 50%;
         left: 70%;
-        background-color: rgba(43, 14, 14, 0.747); }
+        background-color: #eb1b2bc9; }
 
 .footer_worp {
   background: #1a1a1a;
