@@ -46,12 +46,11 @@ body {
         margin-left: 5px; }
         .header_top .top_head .icon_manu .icon_list .icons {
           color: #fff;
-          text-decoration: none;
-          padding: 0 8px; }
+          display: inline-block;
+          margin-left: 15px;
+          font-size: 14px; }
           .header_top .top_head .icon_manu .icon_list .icons:hover {
             color: #eb1b2b; }
-          .header_top .top_head .icon_manu .icon_list .icons:last-child padding {
-            padding-right: 0px; }
 
 header.header {
   background: #fff; }

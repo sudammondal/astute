@@ -27,16 +27,13 @@
                 margin-left: 5px;
                 .icons {
                     color: #fff;
-                    text-decoration: none;
-                    padding: 0 8px;
+                    display: inline-block;
+                    margin-left: 15px;
+                    font-size: 14px;
                     &:hover {
                         color: #eb1b2b;
                     }
-                    &:last-child {
-                        padding {
-                            padding-right: 0px;
-                        }
-                    }
+                    
                 }
             }
         }
