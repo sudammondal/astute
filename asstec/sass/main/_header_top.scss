@@ -1,6 +1,6 @@
 .header_top {
     background-color: #121212;
-    padding: 12px 0;
+    padding: 11px 0;
     .top_head {
         display: flex;
         .contac {
@@ -12,8 +12,7 @@
                 font-size: 15px;
                 color: #fff;
                 i {
-                    font-style: normal;
-                    font-weight: 400;
+                    font-size: 13px;
                     color: #eb1b2b;
                     margin-right: 7px;
                 }
@@ -31,6 +30,7 @@
                     display: inline-block;
                     margin-left: 15px;
                     font-size: 14px;
+                    font-weight: 300;
                     &:hover {
                         color: #eb1b2b;
                     }
@@ -98,7 +98,7 @@ header.header {
                   
                     a {
                         display: inline-block;
-                        margin: 39px 5px;
+                        margin: 37px 5px;
                         transition: .5s;
                         position: relative;
                         color: #333;
@@ -107,16 +107,14 @@ header.header {
                         text-transform: uppercase;
                         font-family: 'Montserrat', sans-serif;
                         &.nav-link {
-                            padding: 0 5px;
+                            padding: 0 3px;
                         }
                     }
                     &:hover {
                         background: transparent;
                         a {
                             color: #eb1b2b;
-                            &.nav-link {
-                                padding: 0 5px;
-                            }
+                            
                         }
                     }
                 }
