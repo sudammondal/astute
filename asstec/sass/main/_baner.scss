@@ -1,5 +1,5 @@
 .banner_worp {
-    background-image   : url(../imgs/slider-1.jpg);
+    background-image   : url(../imgs/az.jpg);
     background-repeat  : no-repeat;
     background-position: center;
     background-size    : cover;
@@ -32,16 +32,18 @@
                 font-weight: 400;
                 line-height: 1.6;
                 color: #fff;
+                margin-left: 5px;
             }
             .banner_button {
                 box-shadow: none;
                 border: 1px solid #eb1b2b;
                 color: #fff;
-                background: #eb1b2b;
+                background-color: #eb1b2b;
                 padding: 10px 36px;
                 font-weight: 600;
                 text-transform: uppercase;
                 box-shadow: none;
+                outline: none;
                 transition: all 0.5s;
                 margin-right: 40px;
                 border-radius: 50px;

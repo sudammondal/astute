@@ -141,7 +141,7 @@ header.header {
         box-shadow: 1px 3px 10px 1px #0000007d; }
 
 .banner_worp {
-  background-image: url(../imgs/slider-1.jpg);
+  background-image: url(../imgs/az.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -169,17 +169,19 @@ header.header {
     margin-bottom: 43px;
     font-weight: 400;
     line-height: 1.6;
-    color: #fff; }
+    color: #fff;
+    margin-left: 5px; }
   .banner_worp .banner .main_banner .banner_button {
     -webkit-box-shadow: none;
     box-shadow: none;
     border: 1px solid #eb1b2b;
     color: #fff;
-    background: #eb1b2b;
+    background-color: #eb1b2b;
     padding: 10px 36px;
     font-weight: 600;
     text-transform: uppercase;
     box-shadow: none;
+    outline: none;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -212,27 +214,28 @@ header.header {
       border: 1px solid #eb1b2b; }
 
 .about_us {
-  padding: 100px 0; }
+  padding: 95px 0; }
   .about_us .about_main .about_sub {
     font-size: 18px;
     font-weight: 600; }
   .about_us .about_main .about_head {
-    margin-top: 1px;
+    margin-top: 14px;
     margin-bottom: 26px;
     font-size: 35px;
     font-weight: 700; }
     .about_us .about_main .about_head span {
       color: #eb1b2b; }
   .about_us .about_main .aboutPrea {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
     margin-bottom: 20px; }
   .about_us .about_main .aboutPrea2 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 25px;
-    margin-bottom: 20px; }
-  .about_us .about_main .sigensar {
-    margin: 20px 0; }
+    margin-bottom: 40px; }
+  .about_us .about_imgs img {
+    width: 100%;
+    height: auto; }
 
 .countain_worp {
   padding: 100px 0;
@@ -240,7 +243,7 @@ header.header {
   .countain_worp .main_counting {
     text-align: center;
     text-align: center;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     padding: 50px;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -249,7 +252,7 @@ header.header {
       font-size: 30px;
       color: #fff; }
     .countain_worp .main_counting .pra_count {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 600;
       color: #fff;
       margin: 15px 0; }
@@ -260,7 +263,7 @@ header.header {
       font-family: 'Poppins', sans-serif; }
     .countain_worp .main_counting:hover {
       background-color: #eb1b2b;
-      border: 3px solid #eb1b2b; }
+      border: 2px solid #eb1b2b; }
 
 .Mission .mainMission {
   margin: 100px 0; }
@@ -269,7 +272,7 @@ header.header {
     .Mission .mainMission .MissionTitle::before {
       width: 2px;
       height: 100%;
-      top: 0;
+      top: 3px;
       right: 55px;
       background: red;
       content: "";
@@ -277,7 +280,7 @@ header.header {
     .Mission .mainMission .MissionTitle::after {
       width: 2px;
       height: 100%;
-      top: 0;
+      top: 3px;
       right: 50px;
       background: red;
       content: "";
@@ -295,7 +298,7 @@ header.header {
     max-width: 495px;
     font-size: 14px;
     margin-bottom: 0;
-    padding-top: 10px;
+    padding-top: 12px;
     margin-left: -53px; }
 
 .Volunteers {
@@ -412,6 +415,34 @@ header.header {
         color: #fff;
         font-weight: 700;
         margin-right: 15px; }
+
+.Media_worp {
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 82px 0 100px; }
+  .Media_worp .media_header .media_hed {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    color: #333; }
+  .Media_worp .media_header .img_star {
+    margin-bottom: 10px; }
+  .Media_worp .media_header .media_prag {
+    max-width: 552px;
+    width: 100%;
+    margin: 0 auto;
+    color: #212529;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 49px; }
 
 .footer_worp {
   background: #1a1a1a;
