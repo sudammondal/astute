@@ -7,17 +7,16 @@
 
 body {
   font-size: 16px;
-  line-height: 25px; }
+  line-height: 25px;
+  font-family: 'Poppins', sans-serif; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: 'Montserrat', sans-serif; }
-  body p {
-    font-family: 'Poppins', sans-serif; }
   body a {
     text-decoration: none; }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px; } }
+    max-width: 1170px; } }
 
 .header_top {
   background-color: #121212;
@@ -27,13 +26,13 @@ body {
     display: -ms-flexbox;
     display: flex; }
     .header_top .top_head .contac.margin_left {
-      margin-left: 20px; }
+      margin-left: 21px; }
     .header_top .top_head .contac a {
       text-decoration: none;
-      font-size: 16px;
+      font-size: 15px;
       color: #fff; }
       .header_top .top_head .contac a i {
-        font-size: 13px;
+        font-size: 14px;
         color: #eb1b2b;
         margin-right: 10px; }
     .header_top .top_head .icon_manu {
@@ -48,9 +47,11 @@ body {
         .header_top .top_head .icon_manu .icon_list .icons {
           color: #fff;
           text-decoration: none;
-          padding: 8px; }
+          padding: 0 8px; }
           .header_top .top_head .icon_manu .icon_list .icons:hover {
             color: #eb1b2b; }
+          .header_top .top_head .icon_manu .icon_list .icons:last-child paddding {
+            padding-right: 0px; }
 
 header.header {
   background: #fff; }
@@ -475,7 +476,8 @@ header.header {
       .footer_worp .Newsletter .media .media-body a .modalhed {
         color: #fff;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
+        margin: 0;
         margin: 0; }
         .footer_worp .Newsletter .media .media-body a .modalhed:hover {
           color: #eb1b2b; }
