@@ -7,13 +7,7 @@ $(document).ready(function () {
               $(".header").removeClass("fixedMenu");
           }
       });
-      $(window).scroll(function () {
-          if ($(window).scrollTop() > 0) {
-              $(".header2").addClass("fixedMenu");
-          } else {
-              $(".header2").removeClass("fixedMenu");
-          }
-      });
+      
       
     // counting ja //
       jQuery(document).ready(function($) {
@@ -23,6 +17,7 @@ $(document).ready(function () {
           });
       });
   
+      
     
     // up icon js //
       $('.up_icon a[href^="#"').on('click', function (event) {

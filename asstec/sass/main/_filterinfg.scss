@@ -1,108 +1,134 @@
 .Media_filtring {
     padding: 50px 0;
     overflow-x: hidden;
-    .custom_col {
-        overflow: hidden;
-        .media_overlay {
-            position: relative;
-            .litebox {
-                position: absolute;
-                bottom: 30px;
-                right: 30px;
-                height: 50px;
-                width: 50px;
-                background-color : #eb1b2b;
-                border-radius: 50px;
-                a {
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    display: inline-flex;
-                    text-decoration: none;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    color: #fff;
-                }
-            }
-            .img_overlay {
-                position: relative;
-                .image {
-                    display: block;
-                    transition: all 0.5s;
-                    max-width: 100%;
-                    width: 100%;
-                    
-                }
-                .overlayhed {
-                    position: absolute;
-                    left: 100%;
-                    top: 0;
-                    bottom: 0;
-                    overflow: hidden;
-                    height: 100%;
-                    width:0;
-                    transition: .5s ease;
-                    transition: all 0.5s;
-                    .text {
-                        white-space: nowrap; 
-                        color: white;
-                        font-size: 20px;
-                        position: absolute;
-                        overflow: hidden;
-                        top: 50%;
-                        left: 70%;
-                        background-color: #eb1b2bc9;
-                        transform: translate(-50%, -50%);
-                        padding:20px;
-                        .hoverhead {
-                            margin: 0;
-                            font-size: 16px;
-                            line-height: 1.2;
-                            a {
-                                color: #fff;
-                                text-decoration: none;
-                            }
-                            
 
-                        }
-                        .hoverpra {
-                            color: #fff;
-                            font-size: 12px;
-                            margin: 0;
-                        }
+    .filtering_item_row {
+        .custom_col {
+            .media_overlay {
+                position: relative;
+                overflow: hidden;
+
+                .litebox {
+                    position: absolute;
+                    bottom: 30px;
+                    right: 30px;
+                    z-index: 1;
+
+                    a {
+                        height: 50px;
+                        width: 50px;
+                        background-color: #eb1b2b;
+                        border-radius: 50px;
+                        display: flex;
+                        text-decoration: none;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
                     }
                 }
-            }
-            
-        }
 
-        &:hover {
-            .media_overlay {
                 .img_overlay {
                     position: relative;
+
                     .image {
-                        transform: scale(1.1);
+                        display: block;
+                        transition: all 0.5s;
+                        max-width: 100%;
+                        width: 100%;
+
                     }
-                    
+
                     .overlayhed {
+                        position: absolute;
+                        left: 100%;
+                        top: 0;
+                        overflow: hidden;
+                        height: 100%;
+                        width: 0;
+                        transition: all 0.5s;
+                        z-index: 1;
+
+                        .text {
+                            white-space: nowrap;
+                            color: white;
+                            font-size: 20px;
+                            position: absolute;
+                            overflow: hidden;
+                            top: 50%;
+                            left: 70%;
+                            background-color: rgba(0, 0, 0, 0.46);
+                            transform: translate(-50%, -50%);
+                            padding: 20px;
+
+                            .hoverhead {
+                                margin: 0;
+                                font-size: 16px;
+                                line-height: 1.2;
+
+                                a {
+                                    color: #fff;
+                                    text-decoration: none;
+                                }
+
+
+                            }
+
+                            .hoverpra {
+                                color: #fff;
+                                font-size: 12px;
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
                         left: 0;
-                        width: 100%;
+                        background-color: rgba(235, 27, 43, 0.7);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 0.5s;
+                        z-index: 1;
                     }
-                    .text {
-                        width: 100%;
-                        top: 50%;
-                        left: 70%;
-                        background-color: #eb1b2bc9;
-                    }
-                    
-                   
                 }
-                
+
+                &:hover {
+
+                    .img_overlay {
+
+                        .image {
+
+                            transform: scale(1.1);
+                        }
+
+                        .overlayhed {
+                            left: 0;
+                            width: 100%;
+
+                            .text {
+                                width: 100%;
+                            }
+                        }
+
+
+                        &:before {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+
+
+                    }
+
+                }
+
             }
-            
+
         }
     }
-    
+
+
 }
