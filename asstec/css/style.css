@@ -1000,8 +1000,7 @@ header.header {
   .INSTAGRAM_worp .slider_main .img_slider {
     outline: none; }
     .INSTAGRAM_worp .slider_main .img_slider .slider_width {
-      width: 270px;
-      height: auto; }
+      width: 100%; }
 
 .election_worp {
   background-image: url(../imgs/clock.jpg);
