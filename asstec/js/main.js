@@ -120,9 +120,9 @@ $(document).ready(function () {
     ]
   });
   $('.slider_main').slick({
-    arrows: true,
+    arrows: false,
     autoplay: true,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 5,

@@ -1,6 +1,9 @@
-.Media_worp {
-    padding: 95px 0 0px;
+.election_worp {
+    background-image: url(../imgs/clock.jpg);
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 95px 0 0px;
     .media_header {
         
         .media_hed {
@@ -9,16 +12,17 @@
             margin-bottom: 3px;
             text-transform: capitalize;
             font-family: 'Montserrat', sans-serif;
-            color: #333;
+            color: #fff;
         }
         .img_star {
             margin-bottom: 9px;
+            color: #fff;
         }
-        .media_prag {
+        .electio_prag {
             max-width: 552px;
             width: 100%;
+            color: #fff;
             margin: 0 auto;
-            color: #212529;
             font-weight: 400;
             font-size: 14px;
             line-height: 1.6;
