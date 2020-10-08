@@ -283,8 +283,21 @@ header.header {
     height: 428px; }
 
 .countain_worp {
-  padding: 100px 0;
-  background: #000; }
+  background-image: url(../imgs/cbn.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 100px 0; }
+  .countain_worp::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    opacity: 0.8; }
   .countain_worp .main_counting {
     text-align: center;
     text-align: center;
@@ -750,7 +763,7 @@ header.header {
     height: 100%;
     background-color: #000000;
     position: absolute;
-    opacity: 0.7; }
+    opacity: 0.9; }
   .countdown .media_header .madia_color {
     color: #fff; }
 
@@ -978,7 +991,17 @@ header.header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 80px 0 100px; }
+  padding: 80px 0 100px;
+  position: relative; }
+  .INSTAGRAM_worp::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    opacity: 0.7; }
   .INSTAGRAM_worp .media_header .media_hed {
     font-size: 35px;
     font-weight: 700;
@@ -1201,7 +1224,17 @@ header.header {
   background-size: cover;
   position: relative;
   padding: 145px 0px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  .vote_video::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    opacity: 0.7; }
   .vote_video .video_vote .video_icon {
     text-align: center; }
     .vote_video .video_vote .video_icon a {
@@ -1349,6 +1382,15 @@ header.header {
   background-position: center;
   background-size: cover;
   position: relative; }
+  .Contact_worp::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    opacity: 0.8; }
   .Contact_worp .contact_header {
     text-align: center; }
     .Contact_worp .contact_header .contact_hed {
@@ -1394,9 +1436,9 @@ header.header {
       padding: 14px 48px;
       border-radius: 30px;
       border-bottom: 50px;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
+      -webkit-transition: all 0.9s;
+      -o-transition: all 0.9s;
+      transition: all 0.9s;
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 2px;
