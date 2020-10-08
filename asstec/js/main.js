@@ -45,7 +45,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         slidesToShow: 3,
         centerPadding: '0',
-        centerMode: true,
+        centerMode: false,
         dots: false,
         arrows: true,
         infinite: true,
