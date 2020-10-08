@@ -1329,6 +1329,18 @@ header.header {
         .latest_news .latest_manu .latest_item .red_more a:hover {
           color: #eb1b2b; }
 
+.brand_worp {
+  padding: 100px 0; }
+  .brand_worp .brand_item {
+    border: 1px solid #ddd;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .brand_worp .brand_item:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
+
 .footer_worp {
   background: #1a1a1a;
   padding: 70px 0 90px; }
