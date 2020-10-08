@@ -310,41 +310,43 @@ header.header {
       background-color: #eb1b2b;
       border: 2px solid #eb1b2b; }
 
-.Mission .mainMission {
-  margin: 100px 0 0; }
-  .Mission .mainMission .MissionTitle {
-    position: relative; }
-    .Mission .mainMission .MissionTitle::before {
-      width: 2px;
-      height: 100%;
-      top: 3px;
-      right: 55px;
-      background: #eb1b2b;
-      content: "";
-      position: absolute; }
-    .Mission .mainMission .MissionTitle::after {
-      width: 2px;
-      height: 100%;
-      top: 3px;
-      right: 50px;
-      background: #eb1b2b;
-      content: "";
-      position: absolute; }
-    .Mission .mainMission .MissionTitle .Missionsub {
-      font-size: 18px;
-      font-weight: 600;
-      margin: 0; }
-    .Mission .mainMission .MissionTitle .Missionhead {
-      margin-bottom: 0px;
-      font-weight: 600;
-      line-height: 1.2;
-      font-size: 40px; }
-  .Mission .mainMission .massionPra {
-    max-width: 495px;
-    font-size: 14px;
-    margin-bottom: 0;
-    padding-top: 12px;
-    margin-left: -53px; }
+.Mission {
+  padding-bottom: 50px; }
+  .Mission .mainMission {
+    margin: 100px 0 0; }
+    .Mission .mainMission .MissionTitle {
+      position: relative; }
+      .Mission .mainMission .MissionTitle::before {
+        width: 2px;
+        height: 100%;
+        top: 3px;
+        right: 55px;
+        background: #eb1b2b;
+        content: "";
+        position: absolute; }
+      .Mission .mainMission .MissionTitle::after {
+        width: 2px;
+        height: 100%;
+        top: 3px;
+        right: 50px;
+        background: #eb1b2b;
+        content: "";
+        position: absolute; }
+      .Mission .mainMission .MissionTitle .Missionsub {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0; }
+      .Mission .mainMission .MissionTitle .Missionhead {
+        margin-bottom: 0px;
+        font-weight: 600;
+        line-height: 1.2;
+        font-size: 40px; }
+    .Mission .mainMission .massionPra {
+      max-width: 495px;
+      font-size: 14px;
+      margin-bottom: 0;
+      padding-top: 12px;
+      margin-left: -53px; }
 
 .Volunteers {
   padding-bottom: 70px; }
@@ -410,6 +412,7 @@ header.header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-position: center;
   position: relative;
   padding: 185px 0; }
   .watch_worp::before {
@@ -772,202 +775,206 @@ header.header {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 49px; }
-  .Goalsworp .nav_manu {
-    overflow: hidden;
-    clear: both;
-    background: #000;
-    margin-bottom: 28px; }
-    .Goalsworp .nav_manu .mav_items .nav_link {
-      padding: 15px 30px;
-      display: block;
-      border-right: 1px solid #ddd;
-      color: #fff;
-      font-weight: 400;
-      font-size: 14px;
-      text-transform: capitalize;
-      text-decoration: none;
-      font-family: 'Poppins', sans-serif;
-      border-radius: 0px; }
-      .Goalsworp .nav_manu .mav_items .nav_link.active, .Goalsworp .nav_manu .mav_items .nav_link:hover {
-        background-color: #eb1b2b; }
-  .Goalsworp .tab_content .tab_pane .video_worp {
-    position: relative; }
-    .Goalsworp .tab_content .tab_pane .video_worp .icon_viedo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-transform: translate(-50px, -50px);
-      -ms-transform: translate(-50px, -50px);
-      transform: translate(-50px, -50px); }
-      .Goalsworp .tab_content .tab_pane .video_worp .icon_viedo a {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        text-decoration: none; }
-        .Goalsworp .tab_content .tab_pane .video_worp .icon_viedo a i {
-          color: #fff;
-          border: 5px solid #fff;
-          width: 80px;
-          height: 80px;
-          line-height: 70px;
-          font-size: 40px;
-          border-radius: 50%;
-          -webkit-transition: all 0.5s;
-          -o-transition: all 0.5s;
-          transition: all 0.5s; }
-        .Goalsworp .tab_content .tab_pane .video_worp .icon_viedo a:hover i {
-          -webkit-transform: scale(1.2);
-          -ms-transform: scale(1.2);
-          transform: scale(1.2); }
-  .Goalsworp .tab_content .tab_title {
-    text-align: left; }
-    .Goalsworp .tab_content .tab_title .title_hed {
-      font-size: 18px;
-      color: #333;
-      line-height: 1.2;
-      font-weight: 700;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-      margin: 10px 0; }
-    .Goalsworp .tab_content .tab_title .title_pra {
-      font-size: 14px;
-      font-weight: 400;
-      margin: 0 10px 8px;
-      color: #333;
-      font-weight: 400;
-      line-height: 1.6; }
-  .Goalsworp .tab_content .mediamanu {
-    text-align: left; }
-    .Goalsworp .tab_content .mediamanu .imgcol {
-      padding: 23px 0 0;
-      width: 90px;
-      height: 90px;
-      text-align: center;
-      font-size: 20px;
-      line-height: 70px;
-      color: #fff;
-      background-color: #eb1b2b; }
-      .Goalsworp .tab_content .mediamanu .imgcol span {
+  .Goalsworp .goalaeorp_main {
+    padding-bottom: 50px; }
+    .Goalsworp .goalaeorp_main .nav_manu {
+      overflow: hidden;
+      clear: both;
+      background: #000;
+      margin-bottom: 28px; }
+      .Goalsworp .goalaeorp_main .nav_manu .mav_items .nav_link {
+        padding: 15px 30px;
         display: block;
-        line-height: 1;
-        line-height: 20px;
-        font-size: 20px;
-        text-transform: capitalize; }
-  .Goalsworp .tab_content .mediamanu .media {
-    padding: 0 0 15px;
-    margin: 0 0 15px;
-    border-bottom: 1px solid #ddd; }
-    .Goalsworp .tab_content .mediamanu .media .imgcol {
-      margin-right: 15px; }
-    .Goalsworp .tab_content .mediamanu .media .media-body a {
-      text-decoration: none; }
-      .Goalsworp .tab_content .mediamanu .media .media-body a .modalhed {
-        color: #333;
+        border-right: 1px solid #ddd;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
         text-transform: capitalize;
-        font-weight: 600;
-        -webkit-transition: .5s;
-        -o-transition: .5s;
-        transition: .5s;
-        font-size: 18px;
-        line-height: 1.2;
-        margin-bottom: 0; }
-      .Goalsworp .tab_content .mediamanu .media .media-body a:hover .modalhed {
-        color: #eb1b2b; }
-    .Goalsworp .tab_content .mediamanu .media .media-body .tabmodl_pra {
-      margin-bottom: 2px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.6;
-      color: #333; }
-    .Goalsworp .tab_content .mediamanu .media .media-body .mdspan {
-      color: #333;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 14px;
-      line-height: 0;
-      margin-right: 10px; }
-      .Goalsworp .tab_content .mediamanu .media .media-body .mdspan i {
-        padding-right: 5px; }
-  .Goalsworp .colops_itme .col_aps .card {
-    margin-bottom: 30px;
-    text-align: left; }
-    .Goalsworp .colops_itme .col_aps .card .cars_main {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-      border-radius: 5px;
-      padding: 0;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s; }
-      .Goalsworp .colops_itme .col_aps .card .cars_main .hed_fiv {
-        position: relative;
-        background: #fff;
-        text-transform: capitalize;
-        cursor: pointer;
-        border-radius: 0;
-        color: #333;
-        padding: 15px 12px 15px 50px;
-        font-size: 16px;
-        font-weight: 500;
-        font-family: 'Poppins', sans-serif; }
-        .Goalsworp .colops_itme .col_aps .card .cars_main .hed_fiv .cicon_position {
-          position: absolute;
-          top: 9px;
-          left: 16px;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          font-size: 30px; }
-        .Goalsworp .colops_itme .col_aps .card .cars_main .hed_fiv .btn-link {
-          color: #000;
-          font-size: 20px;
-          font-weight: 400;
-          font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 0px; }
+        .Goalsworp .goalaeorp_main .nav_manu .mav_items .nav_link.active, .Goalsworp .goalaeorp_main .nav_manu .mav_items .nav_link:hover {
+          background-color: #eb1b2b; }
+    .Goalsworp .goalaeorp_main .tab_content .tab_pane .video_worp {
+      position: relative; }
+      .Goalsworp .goalaeorp_main .tab_content .tab_pane .video_worp .icon_viedo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-transform: translate(-50px, -50px);
+        -ms-transform: translate(-50px, -50px);
+        transform: translate(-50px, -50px); }
+        .Goalsworp .goalaeorp_main .tab_content .tab_pane .video_worp .icon_viedo a {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
           text-decoration: none; }
-        .Goalsworp .colops_itme .col_aps .card .cars_main .hed_fiv .minus {
-          display: none; }
-        .Goalsworp .colops_itme .col_aps .card .cars_main .hed_fiv .plus {
-          display: block; }
-        .Goalsworp .colops_itme .col_aps .card .cars_main .hed_fiv[aria-expanded="true"] .minus {
-          display: block; }
-        .Goalsworp .colops_itme .col_aps .card .cars_main .hed_fiv[aria-expanded="true"] .plus {
-          display: none; }
-        .Goalsworp .colops_itme .col_aps .card .cars_main .hed_fiv[aria-expanded="true"] {
-          background: #eb1b2b;
-          padding-left: 50px;
-          cursor: pointer;
-          text-transform: capitalize;
-          font-family: 'Poppins', sans-serif;
-          border-radius: 0;
-          color: #fff; }
-    .Goalsworp .colops_itme .col_aps .card .clo_ps .card-body {
-      padding: 15px; }
-      .Goalsworp .colops_itme .col_aps .card .clo_ps .card-body p {
+          .Goalsworp .goalaeorp_main .tab_content .tab_pane .video_worp .icon_viedo a i {
+            color: #fff;
+            border: 5px solid #fff;
+            width: 80px;
+            height: 80px;
+            line-height: 70px;
+            font-size: 36px;
+            border-radius: 50%;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+          .Goalsworp .goalaeorp_main .tab_content .tab_pane .video_worp .icon_viedo a:hover i {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+    .Goalsworp .goalaeorp_main .tab_content .tab_title {
+      text-align: left; }
+      .Goalsworp .goalaeorp_main .tab_content .tab_title .title_hed {
+        font-size: 18px;
+        color: #333;
+        line-height: 1.2;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        margin: 10px 0; }
+      .Goalsworp .goalaeorp_main .tab_content .tab_title .title_pra {
         font-size: 14px;
         font-weight: 400;
+        margin: 0 10px 8px;
+        color: #333;
+        font-weight: 400;
+        line-height: 1.6; }
+    .Goalsworp .goalaeorp_main .tab_content .mediamanu {
+      text-align: left; }
+      .Goalsworp .goalaeorp_main .tab_content .mediamanu .imgcol {
+        padding: 23px 0 0;
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 70px;
+        color: #fff;
+        background-color: #eb1b2b; }
+        .Goalsworp .goalaeorp_main .tab_content .mediamanu .imgcol span {
+          display: block;
+          line-height: 1;
+          line-height: 20px;
+          font-size: 20px;
+          text-transform: capitalize; }
+    .Goalsworp .goalaeorp_main .tab_content .mediamanu .media {
+      padding: 0 0 15px;
+      margin: 0 0 15px;
+      border-bottom: 1px solid #ddd; }
+      .Goalsworp .goalaeorp_main .tab_content .mediamanu .media .imgcol {
+        margin-right: 15px; }
+      .Goalsworp .goalaeorp_main .tab_content .mediamanu .media .media-body a {
+        text-decoration: none; }
+        .Goalsworp .goalaeorp_main .tab_content .mediamanu .media .media-body a .modalhed {
+          color: #333;
+          text-transform: capitalize;
+          font-weight: 600;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          transition: .5s;
+          font-size: 18px;
+          line-height: 1.2;
+          margin-bottom: 0; }
+        .Goalsworp .goalaeorp_main .tab_content .mediamanu .media .media-body a:hover .modalhed {
+          color: #eb1b2b; }
+      .Goalsworp .goalaeorp_main .tab_content .mediamanu .media .media-body .tabmodl_pra {
+        margin-bottom: 2px;
+        font-weight: 400;
+        font-size: 14px;
         line-height: 1.6;
+        color: #333; }
+      .Goalsworp .goalaeorp_main .tab_content .mediamanu .media .media-body .mdspan {
         color: #333;
         font-family: 'Poppins', sans-serif;
-        margin: 0 0 10px 0; }
-      .Goalsworp .colops_itme .col_aps .card .clo_ps .card-body .clapsManu {
-        margin: 0 0 0 15px; }
-        .Goalsworp .colops_itme .col_aps .card .clo_ps .card-body .clapsManu .clops_list {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 0;
+        margin-right: 10px; }
+        .Goalsworp .goalaeorp_main .tab_content .mediamanu .media .media-body .mdspan i {
+          padding-right: 5px; }
+  .Goalsworp .goalaeorp_main {
+    padding-bottom: 50px; }
+    .Goalsworp .goalaeorp_main .colops_itme .col_aps .card {
+      margin-bottom: 30px;
+      text-align: left; }
+      .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .cars_main {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 5px;
+        padding: 0;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .cars_main .hed_fiv {
+          position: relative;
+          background: #fff;
+          text-transform: capitalize;
+          cursor: pointer;
+          border-radius: 0;
+          color: #333;
+          padding: 15px 12px 15px 50px;
+          font-size: 16px;
+          font-weight: 500;
+          font-family: 'Poppins', sans-serif; }
+          .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .cars_main .hed_fiv .cicon_position {
+            position: absolute;
+            top: 9px;
+            left: 16px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            font-size: 30px; }
+          .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .cars_main .hed_fiv .btn-link {
+            color: #000;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none; }
+          .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .cars_main .hed_fiv .minus {
+            display: none; }
+          .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .cars_main .hed_fiv .plus {
+            display: block; }
+          .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .cars_main .hed_fiv[aria-expanded="true"] .minus {
+            display: block; }
+          .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .cars_main .hed_fiv[aria-expanded="true"] .plus {
+            display: none; }
+          .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .cars_main .hed_fiv[aria-expanded="true"] {
+            background: #eb1b2b;
+            padding-left: 50px;
+            cursor: pointer;
+            text-transform: capitalize;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 0;
+            color: #fff; }
+      .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .clo_ps .card-body {
+        padding: 15px; }
+        .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .clo_ps .card-body p {
           font-size: 14px;
           font-weight: 400;
           line-height: 1.6;
           color: #333;
-          font-family: 'Poppins', sans-serif; }
-  .Goalsworp .colops_itme a {
-    text-decoration: none; }
-    .Goalsworp .colops_itme a .pra_clops {
-      color: #fff;
-      font-size: 14px;
-      font-family: 'Poppins', sans-serif; }
-      .Goalsworp .colops_itme a .pra_clops .c_p_span {
-        color: #fbff00; }
+          font-family: 'Poppins', sans-serif;
+          margin: 0 0 10px 0; }
+        .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .clo_ps .card-body .clapsManu {
+          margin: 0 0 0 15px; }
+          .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .clo_ps .card-body .clapsManu .clops_list {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #333;
+            font-family: 'Poppins', sans-serif; }
+    .Goalsworp .goalaeorp_main .colops_itme a {
+      text-decoration: none; }
+      .Goalsworp .goalaeorp_main .colops_itme a .pra_clops {
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif; }
+        .Goalsworp .goalaeorp_main .colops_itme a .pra_clops .c_p_span {
+          color: #fbff00; }
 
 .INSTAGRAM_worp {
   overflow-x: hidden;
@@ -978,6 +985,7 @@ header.header {
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 80px 0 100px; }
   .INSTAGRAM_worp .media_header .media_hed {
     font-size: 35px;
@@ -1011,6 +1019,9 @@ header.header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 95px 0 95px;
   position: relative; }
   .election_worp::before {
@@ -1053,21 +1064,177 @@ header.header {
     justify-content: center;
     vertical-align: middle;
     list-style: none; }
-    .election_worp #countdown ul li {
+    .election_worp #countdown ul .days_list {
       display: inline-block;
       padding: 50px;
-      background: red;
-      margin-right: 10px;
-      color: #fff; }
-      .election_worp #countdown ul li:last-child {
+      background: #eb1b2b;
+      color: #fff;
+      height: 167px;
+      width: 175px;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 18px; }
+      .election_worp #countdown ul .days_list:last-child {
         margin-right: 0; }
-      .election_worp #countdown ul li span {
+      .election_worp #countdown ul .days_list span {
         display: block;
-        padding: 0 0 12px;
-        font-size: 23px;
+        padding: 0 0 25px;
+        font-size: 55px;
         line-height: 30px;
-        font-weight: 700;
+        font-weight: 400;
         color: #fff; }
+    .election_worp #countdown ul .colon_lict {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      background: transparent;
+      height: 167px;
+      width: 60px;
+      color: #fff;
+      font-size: 77px; }
+  .election_worp .counter_bnt {
+    text-align: center;
+    margin-top: 50px;
+    overflow: hidden;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    .election_worp .counter_bnt a {
+      font-size: 16px;
+      font-weight: 500;
+      background: #eb1b2b;
+      color: #fff;
+      line-height: 52px;
+      padding: 12px 30px;
+      border-radius: 30px;
+      border: 1px solid #eb1b2b;
+      border-bottom: 50px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      text-decoration: none;
+      color: #fff; }
+      .election_worp .counter_bnt a:hover {
+        color: #eb1b2b;
+        background: #fff;
+        border-color: #fff; }
+
+.MEMBER_revew {
+  margin: 100px 0 0; }
+  .MEMBER_revew .MissionTitle {
+    position: relative; }
+    .MEMBER_revew .MissionTitle::before {
+      width: 2px;
+      height: 100%;
+      top: 3px;
+      right: 35px;
+      background: #eb1b2b;
+      content: "";
+      position: absolute; }
+    .MEMBER_revew .MissionTitle::after {
+      width: 2px;
+      height: 100%;
+      top: 3px;
+      right: 40px;
+      background: #eb1b2b;
+      content: "";
+      position: absolute; }
+    .MEMBER_revew .MissionTitle .Missionsub {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0; }
+    .MEMBER_revew .MissionTitle .Missionhead {
+      margin-bottom: 0px;
+      font-weight: 600;
+      line-height: 1.2;
+      font-size: 40px; }
+  .MEMBER_revew .massionPra {
+    max-width: 495px;
+    font-size: 14px;
+    padding-top: 12px;
+    margin: 0 0 0 -40px; }
+  .MEMBER_revew .testmonials_slied {
+    padding: 33px 0 82px; }
+    .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items {
+      outline: none;
+      padding: 10px;
+      background-color: #fff;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      margin: 15px 15px 30px 0; }
+      .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items .test_item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 10px 6px 0; }
+        .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items .test_item .list_item {
+          margin-right: 20px; }
+        .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items .test_item .test_title {
+          padding-top: 15px; }
+          .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items .test_item .test_title .slid_hed {
+            font-size: 20px;
+            font-weight: 500;
+            color: #333; }
+          .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items .test_item .test_title .slid_pra {
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: #333;
+            margin: 0; }
+      .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items .slid_pra2 {
+        color: #333;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.6;
+        padding-top: 15px;
+        max-width: 330px;
+        width: 100%;
+        margin: 0 5px 35px; }
+      .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items:hover {
+        -webkit-box-shadow: 0px 10px 40px 0px rgba(148, 146, 245, 0.2);
+        box-shadow: 0px 10px 40px 0px rgba(148, 146, 245, 0.2); }
+
+.vote_video {
+  background-image: url(../imgs/video-image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 145px 0px;
+  text-align: center; }
+  .vote_video .video_vote .video_icon {
+    text-align: center; }
+    .vote_video .video_vote .video_icon a {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      text-decoration: none; }
+      .vote_video .video_vote .video_icon a i {
+        color: #fff;
+        border: 5px solid #fff;
+        width: 90px;
+        height: 90px;
+        line-height: 80px;
+        font-size: 40px;
+        border-radius: 50%;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+  .vote_video .video_vote .video_hed {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-top: 28px;
+    text-transform: uppercase; }
 
 .footer_worp {
   background: #1a1a1a;

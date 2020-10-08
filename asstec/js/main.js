@@ -43,7 +43,9 @@ $(document).ready(function () {
     $('.main_slieda_ttstmonials').slick({
         autoplay: false,
         slidesToScroll: 1,
-        slidesToShow: 1,
+        slidesToShow: 3,
+        centerPadding: '0',
+        centerMode: true,
         dots: false,
         arrows: true,
         infinite: true,
@@ -166,7 +168,7 @@ $(document).ready(function () {
     hour = minute * 60,
     day = hour * 24;
 
-let birthday = "Sep 30, 2021 00:00:00",
+let birthday = "decrmber 30, 2020 00:00:00",
   countDown = new Date(birthday).getTime(),
   x = setInterval(function() {    
 
