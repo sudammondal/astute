@@ -1,0 +1,119 @@
+.Contact_worp {
+    background-image: url(../imgs/cbn.jpg);
+    padding: 100px 0;
+    background-repeat  : no-repeat;
+    background-position: center;
+    background-size    : cover;
+    position: relative;
+    .contact_header {
+        text-align: center;
+        .contact_hed {
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 3px;
+            text-transform: capitalize;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            
+            
+        }
+        .img_star {
+            margin-bottom: 9px;
+        }
+        .contact_pra {
+            max-width: 552px;
+            width: 100%;
+            margin: 0 auto;
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 49px;
+
+        }
+    }
+    .contact_item {
+        text-align: center;
+        .contact_icon {
+            a{
+                text-decoration: none;
+                color: #fff;
+                i {
+                    font-size: 36px;
+                }
+            }
+            
+        }
+        .contac_prag {
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+            margin-top: 6px;
+            margin: 5px;
+        }
+    }
+    .counter_bnt {
+        text-align: center;
+        margin-bottom: 30px;
+        a{
+            font-size: 14px;
+            font-weight: 400;
+            background: #eb1b2b;
+            color: #fff;
+            line-height: 52px;
+            padding: 14px 48px;
+            border-radius: 30px;
+            border-bottom: 50px;
+            transition: all 0.5s;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fff;
+            &:hover {
+                color: #eb1b2b;
+                background-color: #fff;
+            }
+        }
+    }
+    .main_form {
+        input {
+            border-radius: 0;
+            outline: none;
+            border: none;
+            box-shadow: none;
+            margin: 50px 0 95px;
+            background: transparent;
+            border-bottom: 1px solid #ddd;
+            padding: 0;
+            color: #fff;
+            &:hover,
+            .active {
+                border-bottom: 1px solid #eb1b2b;
+            }
+        }
+        ::placeholder {
+            color: #fff;
+        }
+        .from_group {
+            margin-bottom: 30px;
+            textarea {
+                background: transparent;
+                border: 0;
+                border-bottom: 1px solid #ddd;
+                border-radius: 0;
+                outline: none;
+                box-shadow: none;
+                padding: 0px;
+                height: 40px;
+                color: #fff;
+                &:hover,
+                .active {
+                    border-bottom: 1px solid #eb1b2b;
+                }
+            }
+            ::placeholder {
+                color: #fff;
+            }
+        }
+    }
+}

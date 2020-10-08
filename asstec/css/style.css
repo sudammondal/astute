@@ -1229,7 +1229,8 @@ header.header {
     text-transform: uppercase; }
 
 .latest_news {
-  padding: 100px 0; }
+  padding: 100px 0;
+  overflow-x: hidden; }
   .latest_news .latelt_header {
     text-align: center; }
     .latest_news .latelt_header .latest_hed {
@@ -1340,6 +1341,115 @@ header.header {
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
+
+.Contact_worp {
+  background-image: url(../imgs/cbn.jpg);
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .Contact_worp .contact_header {
+    text-align: center; }
+    .Contact_worp .contact_header .contact_hed {
+      font-size: 35px;
+      font-weight: 700;
+      margin-bottom: 3px;
+      text-transform: capitalize;
+      font-family: 'Montserrat', sans-serif;
+      color: #fff; }
+    .Contact_worp .contact_header .img_star {
+      margin-bottom: 9px; }
+    .Contact_worp .contact_header .contact_pra {
+      max-width: 552px;
+      width: 100%;
+      margin: 0 auto;
+      color: #fff;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 49px; }
+  .Contact_worp .contact_item {
+    text-align: center; }
+    .Contact_worp .contact_item .contact_icon a {
+      text-decoration: none;
+      color: #fff; }
+      .Contact_worp .contact_item .contact_icon a i {
+        font-size: 36px; }
+    .Contact_worp .contact_item .contac_prag {
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      margin-top: 6px;
+      margin: 5px; }
+  .Contact_worp .counter_bnt {
+    text-align: center;
+    margin-bottom: 30px; }
+    .Contact_worp .counter_bnt a {
+      font-size: 14px;
+      font-weight: 400;
+      background: #eb1b2b;
+      color: #fff;
+      line-height: 52px;
+      padding: 14px 48px;
+      border-radius: 30px;
+      border-bottom: 50px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fff; }
+      .Contact_worp .counter_bnt a:hover {
+        color: #eb1b2b;
+        background-color: #fff; }
+  .Contact_worp .main_form input {
+    border-radius: 0;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 50px 0 95px;
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    color: #fff; }
+    .Contact_worp .main_form input:hover,
+    .Contact_worp .main_form input .active {
+      border-bottom: 1px solid #eb1b2b; }
+  .Contact_worp .main_form ::-webkit-input-placeholder {
+    color: #fff; }
+  .Contact_worp .main_form :-ms-input-placeholder {
+    color: #fff; }
+  .Contact_worp .main_form ::-ms-input-placeholder {
+    color: #fff; }
+  .Contact_worp .main_form ::placeholder {
+    color: #fff; }
+  .Contact_worp .main_form .from_group {
+    margin-bottom: 30px; }
+    .Contact_worp .main_form .from_group textarea {
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid #ddd;
+      border-radius: 0;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      padding: 0px;
+      height: 40px;
+      color: #fff; }
+      .Contact_worp .main_form .from_group textarea:hover,
+      .Contact_worp .main_form .from_group textarea .active {
+        border-bottom: 1px solid #eb1b2b; }
+    .Contact_worp .main_form .from_group ::-webkit-input-placeholder {
+      color: #fff; }
+    .Contact_worp .main_form .from_group :-ms-input-placeholder {
+      color: #fff; }
+    .Contact_worp .main_form .from_group ::-ms-input-placeholder {
+      color: #fff; }
+    .Contact_worp .main_form .from_group ::placeholder {
+      color: #fff; }
 
 .footer_worp {
   background: #1a1a1a;
