@@ -1,0 +1,36 @@
+.manu_Iteme {
+    .isotop_manu {
+        text-align: center;
+        .isotopmein {
+            list-style: none;
+            margin-bottom: 0px;
+            padding: 0;
+            .list_item {
+                display: inline-block;
+                background-color: transparent;
+                margin: 0 5px 0;
+                a { 
+                    font-size: 13px;
+                    font-weight: 500; 
+                    border: 1px solid #f3eaea;
+                    text-transform: uppercase;
+                    padding: 4px 28px;
+                    border-color: #eb1b2b; 
+                    border-radius: 30px;
+                    transition: 0.5s;
+                    color: #333;
+                    text-decoration: none;
+                }
+                &.active,
+                &:hover {
+                    a{
+                        background-color: #eb1b2b;
+                        color: #fff;
+                    }
+                    
+
+                }
+            }
+        }
+    }
+}
