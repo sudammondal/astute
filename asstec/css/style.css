@@ -664,7 +664,8 @@ header.header {
       position: relative; }
       .VOLUNTEER .ovErlay .img_overlay .image {
         display: block;
-        border: 1px solid #ddd; }
+        border: 1px solid #ddd;
+        width: 100%; }
       .VOLUNTEER .ovErlay .img_overlay .overlay {
         position: absolute;
         top: 100%;
@@ -1590,9 +1591,6 @@ header.header {
       .footer_worp .Newsletter .Instagram .castomRow .castomCol .itme_img {
         position: relative;
         margin: 2px; }
-        .footer_worp .Newsletter .Instagram .castomRow .castomCol .itme_img .imgangor .img {
-          width: 88px;
-          height: 88px; }
         .footer_worp .Newsletter .Instagram .castomRow .castomCol .itme_img .imgangor .bloghovericon {
           position: absolute;
           top: 60%;
@@ -1656,3 +1654,57 @@ header.header {
           transition: all 0.5s; }
         .footer .footer_bottom .bottom_fter .list-itme:hover a {
           color: #eb1b2b; }
+
+@media (max-width: 1024px) {
+  .Mission .mainMission .MissionTitle .Missionhead {
+    font-size: 30px; }
+  .MEMBER_revew .MissionTitle .Missionhead {
+    font-size: 30px; } }
+
+@media (max-width: 768px) {
+  .navbar_collapse .main_manu {
+    overflow-y: scroll;
+    height: 200px;
+    margin: 20px; }
+  header.header.fixedMenu .navbar .maincollaps .main_manu li a {
+    color: #fff;
+    padding: 30px 5px; }
+  header.header .navbar .maincollaps .main_manu li a.nav-link {
+    margin: -20px 3px; }
+  .banner_worp .banner .main_banner .banerHed {
+    font-size: 46px; }
+  .Mission .mainMission .massionPra {
+    margin-left: 0px; }
+  .Mission .mainMission .MissionTitle::after {
+    right: 5px; }
+  .Mission .mainMission .MissionTitle::before {
+    right: 1px; }
+  .about_us .about_main .sigensar {
+    margin-bottom: 30px; }
+  .about_us .about_imgs img {
+    width: 100%; }
+  .countain_worp .main_counting {
+    margin-bottom: 30px; }
+  .countain_worp {
+    padding-bottom: -30px; }
+  .watch_worp .video_main {
+    text-align: center;
+    margin-top: 50px; }
+  .watch_worp .video_main .viveoLink {
+    font-size: 20px; }
+  .VOLUNTEER .ovErlay {
+    margin-bottom: 30px; }
+  .Contact_worp .counter_bnt {
+    margin-top: 30px; }
+  .brand_worp {
+    margin-bottom: -30px; }
+  .brand_worp .brand_item {
+    margin-bottom: 30px; } }
+
+@media (max-width: 420px) {
+  .header_top {
+    display: none; }
+  .banner_worp .banner .main_banner .banerHed {
+    font-size: 30px; }
+  .banner_worp .banner .main_banner .banner_button {
+    padding: 30px; } }
