@@ -23,6 +23,7 @@
             a {
                 display: inline-flex;
                 text-decoration: none;
+                transition: all 0.5s;
                 i {
                     color: #fff;
                     border: 5px solid #fff;
@@ -32,6 +33,13 @@
                     font-size: 40px;
                     border-radius: 50%;
                     transition: all 0.5s;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                    i {
+                        color: #eb1b2b;
+                        border-color: #eb1b2b;
+                    }
                 }
             }
            

@@ -1,87 +1,87 @@
+
+
 $(document).ready(function () {
   //header js//
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 0) {
-            $(".header").addClass("fixedMenu");
-        } else {
-            $(".header").removeClass("fixedMenu");
-        }
-    });
-    
-    
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 0) {
+      $(".header").addClass("fixedMenu");
+    } else {
+      $(".header").removeClass("fixedMenu");
+    }
+  });
+
+
   // counting ja //
-    jQuery(document).ready(function($) {
-        $('.counting').counterUp({
-            delay: 10,
-            time: 1000
-        });
+  jQuery(document).ready(function ($) {
+    $('.counting').counterUp({
+      delay: 10,
+      time: 1000
     });
+  });
 
-    
-  
+
+
   // up icon js //
-    $('.up_icon a[href^="#"').on('click', function (event) {
-      var target = $(this.getAttribute('href'));
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: target.offset().top
-        }, 2000);
+  $('.up_icon a[href^="#"').on('click', function (event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 2000);
+    }
+  });
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 70) {
+      $(".up_icon").addClass("up_iconFixd");
+    } else {
+      $(".up_icon").removeClass("up_iconFixd");
+    }
+  });
+
+  // slider js// 
+  $('.main_slieda_ttstmonials').slick({
+    autoplay: true,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    centerPadding: '0',
+    centerMode: false,
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 1500,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+        }
       }
-    });
+    ]
+  });
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 70) {
-            $(".up_icon").addClass("up_iconFixd");
-        }
-        else {
-            $(".up_icon").removeClass("up_iconFixd");
-        }
-    });
-
-    // slider js// 
-    $('.main_slieda_ttstmonials').slick({
-        autoplay: true,
-        slidesToScroll: 1,
-        slidesToShow: 3,
-        centerPadding: '0',
-        centerMode: false,
-        dots: false,
-        arrows: true,
-        infinite: true,
-        speed: 1500,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              dots: false,
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              dots: false,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              dots: false,
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              dots: false,
-            }
-          }
-        ]
-    });
-    
   $('.sssyour-class').slick({
     arrows: false,
     autoplay: true,
@@ -90,8 +90,7 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 1,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
@@ -122,16 +121,16 @@ $(document).ready(function () {
     ]
   });
   //===============instgam==========//
-  $('.slider_main').slick({
-    arrows: false,
-    autoplay: true,
+  $('.slider_main, .brabd_slied').slick({
+    arrows: true,
+    autoplay: false,
     dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 3,
-    responsive: [
-      {
+    centerPadding: '0px',
+    responsive: [{
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
@@ -161,123 +160,178 @@ $(document).ready(function () {
       }
     ]
   });
-//=====================countundoen ========//
- 
-
-$('.latest_news_slied').slick({
-  arrows: false,
-  autoplay: true,
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        dots: false,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        dots: false,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        dots: false,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        dots: false,
-      }
-    }
-  ]
-});
-//=====================countundoen ========//
+  //=====================countundoen ========//
 
 
+    $('.latest_news_slied').slick({
+      arrows: false,
+      autoplay: true,
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            dots: false,
+          }
+        }
+      ]
+    });
 
-    const second = 1000,
-    minute = second * 60,
-    hour = minute * 60,
-    day = hour * 24;
+  var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
-let birthday = "decrmber 30, 2020 00:00:00",
-  countDown = new Date(birthday).getTime(),
-  x = setInterval(function() {    
+  // Update the count down every 1 second
+  var x = setInterval(function() {
 
-    let now = new Date().getTime(),
-        distance = countDown - now;
-
-    document.getElementById("days").innerText = Math.floor(distance / (day)),
-      document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-      document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-      document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-    //do something later when date is reached
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("countDown").innerHTML =
+    "<span>"+days + "<br>" + "<span>"+ "days "+"</span>" +"</span>" +
+    "<span>"+hours + "<br>" + "<span>"+ "hours "+"</span>" +"</span>"+
+    "<span>"+ minutes + "<br>"+ "<span>"+ "minutes "+"</span>" +"</span>"+
+    "<span>"+ seconds + "<br>"+ "<span>"+ "second "+"</span>" +"</span>";
+      
+    // If the count down is over, write some text 
     if (distance < 0) {
-      let headline = document.getElementById("headline"),
-          countdown = document.getElementById("countdown"),
-          content = document.getElementById("content");
-
-      headline.innerText = "It's my birthday!";
-      countdown.style.display = "none";
-      content.style.display = "block";
-
       clearInterval(x);
+      document.getElementById("countDown").innerHTML = "EXPIRED";
     }
-    //seconds
-  }, 0)
+  }, 1000);
+
+    
+  //========== filtering========== //
+
+  // function isoTopActive() {
+  //   // Iso top js
+  //   $(".filtering_item_row").isotope({
+  //       itemSelector: '.custom_col',
+  //       layoutMode: 'fitRows'
+  //   });
+  //   var isOacTive = $('.isotopmein button').click(function () {
+  //       $(".isotopmein button").removeClass("active");
+  //       $(this).addClass("active");
+  //       var selector = $(this).attr('data-filter');
+  //       $(".filtering_item_row").isotope({
+  //           filter: selector,
+  //           animationOptions: {
+  //               duration: 750,
+  //               easing: 'linear',
+  //               queue: false,
+  //           }
+  //       });
+  //       return false;
+  //   });
+
+  // }
+  // isoTopActive();
+  //       /*---------LIGHT-BOX js-----------*/
+  // function lightBoxImages() {
+  //   var selectorG = '.icon_link';
+  //   if($(selectorG).length){
+  //       var instanceG = $(selectorG).imageLightbox({
+  //           quitOnDocClick:	false,
+  //           button:         true,
+  //           activity:       true,
+  //           overlay:        true,
+  //           arrows:         true,
+  //           preloadNext:    true,
+  //       });		
+  //   }
+  // }
+  // lightBoxImages();
+
+
+
+  function isoTopActive() {
+    // Iso top js
+    $(".ctm_row").isotope({
+        itemSelector: '.ctm_col',
+        layoutMode: 'fitRows'
+    });
+
+    var isOacTive = $('.Isotopemanu button').click(function () {
+        $(".Isotopemanu button").removeClass("active");
+        $(this).addClass("active");
+        var selector = $(this).attr('data-filter');
+        $(".ctm_row").isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false,
+            }
+        });
+        return false;
+    });
+  }
+  isoTopActive();
+
+        /*---------LIGHT-BOX js-----------*/
+  function lightBoxImages() {
+    var selectorG = '.icon_link';
+    if($(selectorG).length){
+        var instanceG = $(selectorG).imageLightbox({
+            quitOnDocClick:	false,
+            button:         true,
+            activity:       true,
+            overlay:        true,
+            arrows:         true,
+            preloadNext:    true,
+        });		
+    }
+  }
+  lightBoxImages();
+
+
+
+  // pop up
+
+
+  function videoPopup() {
+    if ($('.popup-youtube').length) {
+        $('.popup-youtube').magnificPopup({
+            type: 'iframe',
+            // gallery:{
+            //   enabled:true
+            // }
+        });
+    }
+}
+videoPopup();
 
 });
-
-// $(document).ready(function () {
-//   function isoTopActive() {
-//       // Iso top js
-//       $(".filtering_item_wrap").isotope({
-//           itemSelector: '.custom_col',
-//           layoutMode: 'fitRows'
-//       });
-//       var isOacTive = $('.isotopmein li').click(function () {
-//           $(".isotopmein li").removeClass("active");
-//           $(this).addClass("active");
-//           var selector = $(this).attr('data-filter');
-//           $(".filtering_item_wrap").isotope({
-//               filter: selector,
-//               animationOptions: {
-//                   duration: 750,
-//                   easing: 'linear',
-//                   queue: false,
-//               }
-//           });
-//           return false;
-//       });
-
-//    /*---------LIGHT-BOX js-----------*/
-
-//   function lightBoxImages() {
-//       var selectorG = '.icon_link';
-//       if($(selectorG).length){
-//           var instanceG = $(selectorG).imageLightbox({
-//               quitOnDocClick:	false,
-//               button:         true,
-//               activity:       true,
-//               overlay:        true,
-//               arrows:         true,
-//               preloadNext:    true,
-//           });		
-//       }
-//   }
-
-//   isoTopActive();
-// });

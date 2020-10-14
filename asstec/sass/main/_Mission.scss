@@ -1,7 +1,6 @@
 .Mission {
-    padding-bottom: 50px;
+    padding: 50px 0;
     .mainMission {
-        margin: 100px 0 0;
         .MissionTitle {
             position: relative;
             &::before {
@@ -38,10 +37,11 @@
         }
         .massionPra {
             max-width: 495px;
+            width: 100%;
             font-size: 14px;
             margin-bottom: 0;
             padding-top: 12px;
-            margin-left: -53px;
+            margin-left: -35px;
         }
     }
 }

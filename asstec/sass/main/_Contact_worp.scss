@@ -24,8 +24,6 @@
             text-transform: capitalize;
             font-family: 'Montserrat', sans-serif;
             color: #fff;
-            
-            
         }
         .img_star {
             margin-bottom: 9px;
@@ -33,12 +31,11 @@
         .contact_pra {
             max-width: 552px;
             width: 100%;
-            margin: 0 auto;
+            margin: 0 auto 49px;
             color: #fff;
             font-weight: 400;
             font-size: 14px;
             line-height: 1.6;
-            margin-bottom: 49px;
 
         }
     }
@@ -58,7 +55,6 @@
             font-size: 14px;
             font-weight: 400;
             color: #fff;
-            margin-top: 6px;
             margin: 5px;
         }
     }
@@ -67,7 +63,7 @@
         margin-bottom: 30px;
         a{
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 600;
             background: #eb1b2b;
             color: #fff;
             line-height: 52px;
@@ -79,6 +75,8 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #fff;
+            outline: none;
+            box-shadow: none;
             &:hover {
                 color: #eb1b2b;
                 background-color: #fff;
@@ -97,8 +95,8 @@
             padding: 0;
             color: #fff;
             &:hover,
-            .active {
-                border-bottom: 1px solid #eb1b2b;
+            &:focus {
+                border-bottom-color:#eb1b2b;
             }
         }
         ::placeholder {
@@ -117,8 +115,8 @@
                 height: 40px;
                 color: #fff;
                 &:hover,
-                .active {
-                    border-bottom: 1px solid #eb1b2b;
+                &:focus{
+                    border-bottom-color: #eb1b2b;
                 }
             }
             ::placeholder {

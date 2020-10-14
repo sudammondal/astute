@@ -35,6 +35,7 @@
                
             .watch_pra {
                 max-width: 619px;
+                width: 100%;
                 font-size: 16px;
                 margin-bottom: 30px;
                 font-weight: 400;
@@ -46,7 +47,7 @@
                 border: 1px solid #eb1b2b;
                 color: #fff;
                 background: #eb1b2b;
-                padding: 7px 29px;
+                padding: 8px 30px;
                 font-weight: 700;
                 text-transform: uppercase;
                 box-shadow: none;
@@ -59,7 +60,7 @@
                 font-family: 'Montserrat', sans-serif;
                 &:hover {
                     background: #fff;
-                    border: 1px solid #fff;
+                    border-color: #fff;
                     color: #eb1b2b;
                 }
             }
@@ -75,20 +76,22 @@
         text-align: right;
         justify-content: center;
         transition: all 0.5s;
-       
         .viveoLink {
             font-size: 30px;
             margin-top: 9px;
             text-decoration: none;
             color: #fff;
             font-weight: 600;
-            margin-right: 15px;
+            margin-right: 15px; 
+            transition: all 0.5s;
             i {
-                margin-right: 10px; transition: all 0.5s;
+                margin-right: 10px;
+                transition: all 0.5s;
             }
-            &:hover {
+            &:hover {  
+                color: #eb1b2b;
                 i {
-                    color: #eb1b2b;
+                    transform: scale(1.2); 
                 }
             }
         }

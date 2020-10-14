@@ -73,9 +73,8 @@
                         align-items: center;
                         justify-content: center;
                         transition: all 0.5s;
-
                         &:hover {
-                            border: 1px solid #fff;
+                            border-color: #fff;
                             background-color: #eb1b2b;
                             color: #fff;
                             
@@ -87,11 +86,6 @@
            
         }
         &:hover {
-            .img_overlay {
-                &::before {
-                    
-                }
-            }
             .overlay_header {
                 text-align: center;
                 background-color: rgba(235, 27, 43, 0.8);
