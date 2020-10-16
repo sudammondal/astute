@@ -1349,8 +1349,8 @@ header.header {
       -o-transition: all 0.5s;
       transition: all 0.5s; }
       .latest_news .latest_manu .latest_item .latest_img img {
-        width: 360px;
-        height: 270px; }
+        height: 270px;
+        width: 100%; }
       .latest_news .latest_manu .latest_item .latest_img .latest_pra {
         position: absolute;
         bottom: 0;
@@ -1839,7 +1839,9 @@ header.header {
     margin-bottom: 30px; }
   .countdown .count_main {
     font-size: 32px;
-    padding: 34px 60px; } }
+    padding: 34px 60px; }
+  .latest_news .latest_manu .latest_item .latest_img img {
+    width: 100%; } }
 
 @media (max-width: 991px) {
   .brand_worp .brand_item {
