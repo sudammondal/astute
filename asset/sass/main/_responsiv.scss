@@ -14,7 +14,7 @@
         font-size: 32px;
         padding: 34px 60px;
     }
-    .latest_news .latest_manu .latest_item .latest_img img {
+    .latest_news .ctm_outline .latest_manu .latest_item .latest_img img {
         width: 100%;
     }
     
@@ -60,9 +60,12 @@
     .countdown .count_main {
         margin-bottom: 20px;
     }
-   
-
+    .countdown .count_main {
+        font-size: 32px;
+        padding: 34px 40px;
+    }
 }
+
 @media (max-width: 768px) {
     .header_top .top_head .contac a {
         font-size: 13px;
@@ -249,11 +252,11 @@
         max-width: 100%;
         margin: 0 ;
     } 
-    .latest_news .latelt_header .latest_hed {
+    .latest_news .ctm_outline .latelt_header .latest_hed {
         font-size: 30px;
         font-weight: 600;
     }
-    .latest_news .latest_manu .latest_item .latest_img .latest_pra {
+    .latest_news .ctm_outline .latest_manu .latest_item .latest_img .latest_pra {
         font-size: 14px;
     }
     .Contact_worp .contact_header .contact_hed {
@@ -284,7 +287,7 @@
     }
     .countdown .count_main {
         font-size: 22px;
-        padding: 34px 14px;
+        padding: 34px 22px;
     }
     .countdown .count_main .count_text {
         font-size: 45px;
@@ -380,7 +383,7 @@
     .vote_video .video_vote .video_hed {
         font-size: 30px; 
     }
-    .latest_news .latelt_header .latest_hed {
+    .latest_news .ctm_outline .latelt_header .latest_hed {
         font-size: 30px;
         font-weight: 600
     }
@@ -388,8 +391,6 @@
         font-size: 30px;
         font-weight: 600;
     }
-
-
     .Contact_worp .contact_item {
         margin-bottom: 30px;
     }
@@ -411,7 +412,7 @@
     }
     .countdown .count_main {
         font-size: 30px;
-        padding: 34px 60px;
+        padding: 34px 63px;
     }
 
 }
@@ -441,8 +442,6 @@
     .countdown .colon {
         display: none;
     }
-    
-
 }
 @media (max-width: 320px) {
     .banner_worp .banner .main_banner .banerHed {
@@ -475,7 +474,7 @@
     .vote_video .video_vote .video_hed {
         font-size: 25px;
     }
-    .latest_news .latelt_header .latest_hed {
+    .latest_news .ctm_outline .latelt_header .latest_hed {
         font-size: 25px;
     }
     .Contact_worp .contact_header .contact_hed {
