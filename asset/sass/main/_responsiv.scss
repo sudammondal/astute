@@ -10,7 +10,12 @@
     .Newsletter {
         margin-bottom: 30px;
     }
-   
+    .countdown .count_main {
+        font-size: 32px;
+        padding: 34px 60px;
+    }
+    
+    
 }
 @media (max-width: 991px) {
     .brand_worp .brand_item {
@@ -49,6 +54,10 @@
         max-width: 100%;
         margin: 0;
     }
+    .countdown .count_main {
+        margin-bottom: 20px;
+    }
+   
 
 }
 @media (max-width: 768px) {
@@ -111,6 +120,14 @@
     .brand_worp .brand_item {
         margin-bottom: 30px;
     }
+    .countdown .count_main {
+        margin-bottom: 20px;
+    }
+    .countdown .count_main {
+        font-size: 30px;
+        padding: 34px 40px;
+    }
+   
 }
 
 @media (max-width: 736px) {
@@ -259,6 +276,19 @@
     .footer .footer_bottom {
         text-align: center;
     }
+    .countdown .colon {
+        display: block;
+    }
+    .countdown .count_main {
+        font-size: 22px;
+        padding: 34px 14px;
+    }
+    .countdown .count_main .count_text {
+        font-size: 45px;
+    }
+    .countdown .colon {
+        top: 40%;
+    }
 
 
 
@@ -269,6 +299,15 @@
 
 
 
+@media (max-width: 568px) {
+    .countdown .count_main {
+        font-size: 22px;
+        padding: 34px 60px;
+    }
+    .countdown .colon {
+        display: none;
+    }
+}
 @media (max-width: 420px) {
     .header_top {
         display: none;
@@ -366,6 +405,16 @@
     .footer_worp .Newsletter .pranews {
         max-width: 100%;
     }
+    .countdown .count_main {
+        margin-bottom: 20px;
+    }
+    .countdown .colon {
+        display: none;
+    }
+    .countdown .count_main {
+        font-size: 30px;
+        padding: 34px 60px;
+    }
 
 }
 @media (max-width: 375px) {
@@ -388,11 +437,13 @@
             padding: 0px 15px;
         }
     }
-    .countdown {
-        span {
-            
-        }
+    .countdown .count_main {
+        margin-bottom: 20px;
     }
+    .countdown .colon {
+        display: none;
+    }
+    
 
 }
 @media (max-width: 320px) {
@@ -436,6 +487,11 @@
     .footer_worp .Newsletter .hednews {
         font-size: 20px;
     }
-    
+    .countdown .count_main {
+        margin-bottom: 20px;
+    }
+    .countdown .colon {
+        display: none;
+    }
 
 }

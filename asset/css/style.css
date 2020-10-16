@@ -806,34 +806,47 @@ header.header {
     .VOLUNTEER .ovErlay:hover .overadhed {
       color: #fff; }
 
-.countdown .media_header .madia_color {
-  color: #fff; }
-
-.countdown span {
-  background-color: red;
-  font-size: 60px;
-  color: #fff;
-  margin: 0 10px 0 auto;
-  text-align: center;
-  display: inline-block;
-  max-width: 200px;
-  width: 100%;
-  padding: 60px;
-  line-height: 30px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  vertical-align: middle; }
-  .countdown span:last-child {
-    margin-right: 0; }
-  .countdown span span {
-    padding: 0;
-    font-size: 20px;
-    line-height: 60px;
-    background-color: transparent; }
+.countdown {
+  position: relative; }
+  .countdown .media_header .madia_color {
+    color: #fff; }
+  .countdown .count_main {
+    background-color: red;
+    font-size: 60px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    max-width: 200px;
+    width: 100%;
+    padding: 34px 73px;
+    line-height: 35px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    vertical-align: middle; }
+    .countdown .count_main .count_text {
+      font-size: 55px;
+      font-weight: 600;
+      line-height: 50px; }
+    .countdown .count_main span {
+      padding: 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 37px;
+      background-color: transparent; }
+  .countdown .colon {
+    font-size: 90px;
+    color: #fff;
+    top: 45%;
+    right: 0;
+    position: absolute;
+    -webkit-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    transform: translate(50%, -50%); }
 
 .Goalsworp {
   text-align: center;
@@ -1823,7 +1836,10 @@ header.header {
   .MEMBER_revew .MissionTitle .Missionhead {
     font-size: 30px; }
   .Newsletter {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .countdown .count_main {
+    font-size: 32px;
+    padding: 34px 60px; } }
 
 @media (max-width: 991px) {
   .brand_worp .brand_item {
@@ -1850,7 +1866,9 @@ header.header {
     margin: 0; }
   .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items .slid_pra2 {
     max-width: 100%;
-    margin: 0; } }
+    margin: 0; }
+  .countdown .count_main {
+    margin-bottom: 20px; } }
 
 @media (max-width: 768px) {
   .header_top .top_head .contac a {
@@ -1892,7 +1910,12 @@ header.header {
   .brand_worp {
     margin-bottom: -30px; }
   .brand_worp .brand_item {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .countdown .count_main {
+    margin-bottom: 20px; }
+  .countdown .count_main {
+    font-size: 30px;
+    padding: 34px 40px; } }
 
 @media (max-width: 736px) {
   .header_top .top_head .contac a {
@@ -1992,7 +2015,23 @@ header.header {
   .footer .futtrbottom {
     text-align: center; }
   .footer .footer_bottom {
-    text-align: center; } }
+    text-align: center; }
+  .countdown .colon {
+    display: block; }
+  .countdown .count_main {
+    font-size: 22px;
+    padding: 34px 14px; }
+  .countdown .count_main .count_text {
+    font-size: 45px; }
+  .countdown .colon {
+    top: 40%; } }
+
+@media (max-width: 568px) {
+  .countdown .count_main {
+    font-size: 22px;
+    padding: 34px 60px; }
+  .countdown .colon {
+    display: none; } }
 
 @media (max-width: 420px) {
   .header_top {
@@ -2059,7 +2098,14 @@ header.header {
   .footer .footer_bottom {
     text-align: center; }
   .footer_worp .Newsletter .pranews {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .countdown .count_main {
+    margin-bottom: 20px; }
+  .countdown .colon {
+    display: none; }
+  .countdown .count_main {
+    font-size: 30px;
+    padding: 34px 60px; } }
 
 @media (max-width: 375px) {
   .banner_worp .banner .main_banner .banerHed {
@@ -2075,7 +2121,11 @@ header.header {
     .banner_worp .banner .main_banner .bnarbtn {
       font-size: 10px;
       font-weight: 400;
-      padding: 0px 15px; } }
+      padding: 0px 15px; }
+  .countdown .count_main {
+    margin-bottom: 20px; }
+  .countdown .colon {
+    display: none; } }
 
 @media (max-width: 320px) {
   .banner_worp .banner .main_banner .banerHed {
@@ -2105,4 +2155,8 @@ header.header {
     font-size: 25px;
     font-weight: 600; }
   .footer_worp .Newsletter .hednews {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .countdown .count_main {
+    margin-bottom: 20px; }
+  .countdown .colon {
+    display: none; } }
