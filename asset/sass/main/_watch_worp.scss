@@ -84,13 +84,14 @@
             font-weight: 600;
             margin-right: 15px; 
             transition: all 0.5s;
+            text-transform: uppercase;
             i {
                 margin-right: 10px;
                 transition: all 0.5s;
             }
             &:hover {  
                 color: #eb1b2b;
-                i {
+                i {color: #eb1b2b;
                     transform: scale(1.2); 
                 }
             }

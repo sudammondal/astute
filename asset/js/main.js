@@ -161,8 +161,6 @@ $(document).ready(function () {
     ]
   });
   //=====================countundoen ========//
-
-
     $('.latest_news_slied').slick({
       arrows: false,
       autoplay: true,
@@ -202,8 +200,9 @@ $(document).ready(function () {
       ]
     });
 
-  var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
+
+  var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
   // Update the count down every 1 second
   var x = setInterval(function() {
 
@@ -220,11 +219,10 @@ $(document).ready(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
     // Output the result in an element with id="demo"
-    document.getElementById("countDown").innerHTML =
-    "<span>"+days + "<br>" + "<span>"+ "days "+"</span>" +"</span>" +
-    "<span>"+hours + "<br>" + "<span>"+ "hours "+"</span>" +"</span>"+
-    "<span>"+ minutes + "<br>"+ "<span>"+ "minutes "+"</span>" +"</span>"+
-    "<span>"+ seconds + "<br>"+ "<span>"+ "second "+"</span>" +"</span>";
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("min").innerHTML = minutes;
+    document.getElementById("sec").innerHTML = seconds;
       
     // If the count down is over, write some text 
     if (distance < 0) {
