@@ -1145,60 +1145,14 @@ header.header {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.6; }
-  .election_worp #countdown ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    vertical-align: middle;
-    list-style: none; }
-    .election_worp #countdown ul .days_list {
-      display: inline-block;
-      padding: 50px;
-      background: #eb1b2b;
-      color: #fff;
-      height: 167px;
-      width: 175px;
-      text-transform: capitalize;
-      font-weight: 500;
-      font-size: 18px; }
-      .election_worp #countdown ul .days_list:last-child {
-        margin-right: 0; }
-      .election_worp #countdown ul .days_list span {
-        display: block;
-        padding: 0 0 25px;
-        font-size: 55px;
-        line-height: 30px;
-        font-weight: 400;
-        color: #fff; }
-    .election_worp #countdown ul .colon_lict {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      background: transparent;
-      height: 167px;
-      width: 60px;
-      color: #fff;
-      font-size: 77px; }
-  .election_worp .counter_bnt {
+  .election_worp .counter_btn {
     text-align: center;
     margin-top: 50px;
     overflow: hidden;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
-    .election_worp .counter_bnt a {
+    .election_worp .counter_btn a {
       font-size: 16px;
       font-weight: 500;
       background: #eb1b2b;
@@ -1212,7 +1166,7 @@ header.header {
       -o-transition: all 0.5s;
       transition: all 0.5s;
       text-decoration: none; }
-      .election_worp .counter_bnt a:hover {
+      .election_worp .counter_btn a:hover {
         color: #eb1b2b;
         background: #fff;
         border-color: #fff; }

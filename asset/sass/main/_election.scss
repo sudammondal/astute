@@ -41,51 +41,7 @@
             line-height: 1.6;
         }
     }
-    #countdown {
-        ul {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            vertical-align: middle;
-            list-style: none;
-            .days_list {
-                display: inline-block;
-                padding: 50px;
-                background: #eb1b2b;
-                color: #fff;
-                height: 167px;
-                width: 175px;
-                text-transform: capitalize;
-                font-weight: 500;
-                font-size: 18px;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-                span {
-                    display: block;
-                    padding: 0 0 25px;
-                    font-size: 55px;
-                    line-height: 30px;
-                    font-weight: 400;
-                    color: #fff;
-                    
-                }
-            }
-            .colon_lict {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: transparent;
-                height: 167px;
-                width: 60px;
-                color: #fff;
-                font-size: 77px;
-            }
-        }
-    }
-  
-    .counter_bnt {
+    .counter_btn {
         text-align: center;
         margin-top: 50px;
         overflow: hidden;
