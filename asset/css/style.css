@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0; }
 
+html, body {
+  overflow-x: hidden; }
+
 body {
   font-size: 16px;
   line-height: 25px;
@@ -306,11 +309,37 @@ header.header {
     opacity: 0.8; }
   .countain_worp .main_counting {
     text-align: center;
-    border: 2px solid #fff;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     padding: 50px;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    position: relative; }
+    .countain_worp .main_counting::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 80px;
+      width: 100%;
+      border-right: 2px solid #fff;
+      border-left: 2px solid #fff;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .countain_worp .main_counting::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 80px;
+      width: 100%;
+      border-right: 2px solid #fff;
+      border-left: 2px solid #fff;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
     .countain_worp .main_counting .icon_count {
       font-size: 30px;
       color: #fff; }
@@ -327,6 +356,8 @@ header.header {
     .countain_worp .main_counting:hover {
       background-color: #eb1b2b;
       border-color: #eb1b2b; }
+      .countain_worp .main_counting:hover::before, .countain_worp .main_counting:hover::after {
+        border-color: #eb1b2b; }
 
 .Mission {
   padding: 50px 0; }
@@ -1536,6 +1567,25 @@ header.header {
       .Contact_worp .counter_bnt a:hover {
         color: #eb1b2b;
         background-color: #fff; }
+  .Contact_worp .main_form .inputItem {
+    position: relative;
+    outline: none; }
+    .Contact_worp .main_form .inputItem .underLine {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background-color: #eb1b2b;
+      -webkit-transition: all 0.9s;
+      -o-transition: all 0.9s;
+      transition: all 0.9s;
+      width: 0;
+      opacity: 0;
+      z-index: 2; }
+    .Contact_worp .main_form .inputItem input:focus + .underLine {
+      width: 100%;
+      opacity: 1; }
   .Contact_worp .main_form input {
     border-radius: 0;
     outline: none;
@@ -1547,8 +1597,6 @@ header.header {
     border-bottom: 1px solid #ddd;
     padding: 0;
     color: #fff; }
-    .Contact_worp .main_form input:hover, .Contact_worp .main_form input:focus {
-      border-bottom-color: #eb1b2b; }
   .Contact_worp .main_form ::-webkit-input-placeholder {
     color: #a29d9d; }
   .Contact_worp .main_form :-ms-input-placeholder {

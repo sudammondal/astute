@@ -1,10 +1,11 @@
 .Contact_worp {
     background-image: url(../imgs/cbn.jpg);
     padding: 100px 0;
-    background-repeat  : no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    background-size    : cover;
+    background-size: cover;
     position: relative;
+
     &::before {
         content: "";
         top: 0;
@@ -15,8 +16,10 @@
         position: absolute;
         opacity: 0.8;
     }
+
     .contact_header {
         text-align: center;
+
         .contact_hed {
             font-size: 35px;
             font-weight: 700;
@@ -25,9 +28,11 @@
             font-family: 'Montserrat', sans-serif;
             color: #fff;
         }
+
         .img_star {
             margin-bottom: 9px;
         }
+
         .contact_pra {
             max-width: 552px;
             width: 100%;
@@ -38,22 +43,27 @@
             line-height: 1.6;
 
         }
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 50px;
         }
     }
+
     .contact_item {
         text-align: center;
+
         .contact_icon {
-            a{
+            a {
                 text-decoration: none;
                 color: #fff;
+
                 i {
                     font-size: 36px;
                 }
             }
-            
+
         }
+
         .contac_prag {
             font-size: 14px;
             font-weight: 400;
@@ -61,13 +71,16 @@
             margin: 5px;
         }
     }
+
     .contact_bottom {
         margin-bottom: 50px;
     }
+
     .counter_bnt {
         text-align: center;
         margin-bottom: 30px;
-        a{
+
+        a {
             font-size: 14px;
             font-weight: 600;
             background: #eb1b2b;
@@ -83,13 +96,40 @@
             color: #fff;
             outline: none;
             box-shadow: none;
+
             &:hover {
                 color: #eb1b2b;
                 background-color: #fff;
             }
         }
     }
+
     .main_form {
+        .inputItem {
+            position: relative;
+            outline: none;
+
+            .underLine {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                background-color: #eb1b2b;
+                transition: all 0.9s;
+                width: 0;
+                opacity: 0;
+                z-index: 2;
+            }
+
+            input:focus {
+                & + .underLine {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+
         input {
             border-radius: 0;
             outline: none;
@@ -100,16 +140,20 @@
             border-bottom: 1px solid #ddd;
             padding: 0;
             color: #fff;
+
             &:hover,
             &:focus {
-                border-bottom-color:#eb1b2b;
+                // border-bottom-color: #eb1b2b;
             }
         }
+
         ::placeholder {
             color: rgb(162, 157, 157);
         }
+
         .from_group {
             margin-bottom: 30px;
+
             textarea {
                 background: transparent;
                 border: 0;
@@ -120,11 +164,13 @@
                 padding: 0px;
                 height: 40px;
                 color: #fff;
+
                 &:hover,
-                &:focus{
+                &:focus {
                     border-bottom-color: #eb1b2b;
                 }
             }
+
             ::placeholder {
                 color: rgb(162, 157, 157);
             }

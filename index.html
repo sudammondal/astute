@@ -285,7 +285,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="manu_Iteme">
+	<section class="manu_Iteme"> 
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -305,7 +305,7 @@
 		</div>
 	</section>
 	<section class="Media_filtring">
-		<div class="container-flutd p-0">
+		<div class="container-flutd p-0">   
 			<div class="row m-0 filtering_item_row">
 				<div class="col-xl-3 col-lg-3 col-md-6 col-12 custom_col p-0  event speech">
 					<div class="media_overlay">
@@ -1168,7 +1168,11 @@
 					<form class="main_form">
 						<div class="row">
 							<div class="col-xl-6 col-lg-6 col-md-12 col-12">
-								<input type="text" class="form-control active" placeholder="Name"> </div>
+								<div class="inputItem">
+									<input type="text" class="form-control active" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder='Name'"> 
+									<div class="underLine"></div>
+								</div>
+							</div>
 							<div class="col-xl-6 col-lg-6 col-md-12 col-12">
 								<input type="email" class="form-control active" placeholder="Email"> </div>
 						</div>
