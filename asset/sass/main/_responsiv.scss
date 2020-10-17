@@ -17,7 +17,19 @@
     .latest_news .ctm_outline .latest_manu .latest_item .latest_img img {
         width: 100%;
     }
+    .Contact_worp {
+        .contact_item {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+    .Contact_worp {
+        .contact_bottom {
+            margin-bottom: 50px;
+        }
+    }
     
+   
     
 }
 @media (max-width: 991px) {
@@ -64,6 +76,7 @@
         font-size: 32px;
         padding: 34px 40px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -117,9 +130,7 @@
     .VOLUNTEER .ovErlay {
         margin-bottom: 30px;
     }
-    .Contact_worp .counter_bnt {
-        margin-top: 30px;
-    }
+   
     .brand_worp  {
         margin-bottom: -30px;
     }
@@ -263,10 +274,7 @@
         font-size: 30px;
         font-weight: 600;
     }
-    .Contact_worp .contact_item {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+  
     .Contact_worp .counter_bnt a {
         padding: 11px 45px;
 
@@ -294,6 +302,13 @@
     }
     .countdown .colon {
         top: 40%;
+    }
+    .brand_worp {
+        .brand_item {
+            img {
+                padding: 0;
+            }
+        }
     }
 
 
@@ -391,9 +406,7 @@
         font-size: 30px;
         font-weight: 600;
     }
-    .Contact_worp .contact_item {
-        margin-bottom: 30px;
-    }
+   
     .footer .futtrbottom {
         text-align: center;
         margin-bottom: 10px;

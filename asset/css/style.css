@@ -811,7 +811,7 @@ header.header {
   .countdown .media_header .madia_color {
     color: #fff; }
   .countdown .count_main {
-    background-color: red;
+    background-color: rgba(235, 27, 43, 0.7);
     font-size: 60px;
     color: #fff;
     margin: 0;
@@ -819,7 +819,7 @@ header.header {
     display: inline-block;
     max-width: 200px;
     width: 100%;
-    padding: 34px 73px;
+    padding: 34px 60px;
     line-height: 35px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -830,7 +830,7 @@ header.header {
     vertical-align: middle; }
     .countdown .count_main .count_text {
       font-size: 55px;
-      font-weight: 600;
+      font-weight: 400;
       line-height: 50px; }
     .countdown .count_main span {
       padding: 0;
@@ -1350,8 +1350,8 @@ header.header {
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s; }
-        .latest_news .ctm_outline .latest_manu .latest_item .latest_img img {
-          height: auto;
+        .latest_news .ctm_outline .latest_manu .latest_item .latest_img .img_size img {
+          height: 290px;
           width: 100%; }
         .latest_news .ctm_outline .latest_manu .latest_item .latest_img .latest_pra {
           position: absolute;
@@ -1440,7 +1440,8 @@ header.header {
               margin-right: 10px; }
 
 .brand_worp {
-  padding: 90px 0; }
+  padding: 90px 0;
+  overflow: hidden; }
   .brand_worp .brand_item {
     text-align: center;
     outline: none; }
@@ -1449,11 +1450,16 @@ header.header {
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s;
-      outline: none; }
+      outline: none;
+      margin: 0 auto; }
       .brand_worp .brand_item img:hover {
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1); }
+
+@media (max-width: 640px) {
+  .brand_worp .brand_item img {
+    padding: 0; } }
 
 .Contact_worp {
   background-image: url(../imgs/cbn.jpg);
@@ -1490,6 +1496,8 @@ header.header {
       font-weight: 400;
       font-size: 14px;
       line-height: 1.6; }
+    .Contact_worp .contact_header:last-child {
+      margin-bottom: 50px; }
   .Contact_worp .contact_item {
     text-align: center; }
     .Contact_worp .contact_item .contact_icon a {
@@ -1502,6 +1510,8 @@ header.header {
       font-weight: 400;
       color: #fff;
       margin: 5px; }
+  .Contact_worp .contact_bottom {
+    margin-bottom: 50px; }
   .Contact_worp .counter_bnt {
     text-align: center;
     margin-bottom: 30px; }
@@ -1774,6 +1784,49 @@ header.header {
           transition: all 0.5s; }
         .footer .footer_bottom .bottom_fter .list-itme:hover a {
           color: #eb1b2b; }
+  .footer .up_iconFixd {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1; }
+    .footer .up_iconFixd a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #eb1b2b;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border: 1px solid #eb1b2b; }
+      .footer .up_iconFixd a i {
+        display: block; }
+      .footer .up_iconFixd a span {
+        display: none;
+        color: #fff; }
+      .footer .up_iconFixd a:hover {
+        background-color: transparent;
+        color: #eb1b2b;
+        border-color: #fff; }
+        .footer .up_iconFixd a:hover i {
+          display: none; }
+        .footer .up_iconFixd a:hover span {
+          display: block;
+          color: #eb1b2b; }
+  .footer .up_icon {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
 
 .filtering_worp {
   overflow: hidden; }
@@ -1791,7 +1844,7 @@ header.header {
       position: absolute;
       top: 50%;
       left: 100%;
-      background-color: #008CBA;
+      background-color: rgba(0, 0, 0, 0.46);
       overflow: hidden;
       width: 100%;
       -webkit-transition: .5s ease;
@@ -1844,7 +1897,12 @@ header.header {
     font-size: 32px;
     padding: 34px 60px; }
   .latest_news .ctm_outline .latest_manu .latest_item .latest_img img {
-    width: 100%; } }
+    width: 100%; }
+  .Contact_worp .contact_item {
+    margin-bottom: 30px;
+    text-align: center; }
+  .Contact_worp .contact_bottom {
+    margin-bottom: 50px; } }
 
 @media (max-width: 991px) {
   .brand_worp .brand_item {
@@ -1913,8 +1971,6 @@ header.header {
     font-size: 20px; }
   .VOLUNTEER .ovErlay {
     margin-bottom: 30px; }
-  .Contact_worp .counter_bnt {
-    margin-top: 30px; }
   .brand_worp {
     margin-bottom: -30px; }
   .brand_worp .brand_item {
@@ -2013,9 +2069,6 @@ header.header {
   .Contact_worp .contact_header .contact_hed {
     font-size: 30px;
     font-weight: 600; }
-  .Contact_worp .contact_item {
-    text-align: center;
-    margin-bottom: 30px; }
   .Contact_worp .counter_bnt a {
     padding: 11px 45px; }
   .footer_worp .Newsletter .Instagram .castomRow .castomCol .itme_img .imgangor img {
@@ -2032,7 +2085,9 @@ header.header {
   .countdown .count_main .count_text {
     font-size: 45px; }
   .countdown .colon {
-    top: 40%; } }
+    top: 40%; }
+  .brand_worp .brand_item img {
+    padding: 0; } }
 
 @media (max-width: 568px) {
   .countdown .count_main {
@@ -2098,8 +2153,6 @@ header.header {
   .Contact_worp .contact_header .contact_hed {
     font-size: 30px;
     font-weight: 600; }
-  .Contact_worp .contact_item {
-    margin-bottom: 30px; }
   .footer .futtrbottom {
     text-align: center;
     margin-bottom: 10px; }
