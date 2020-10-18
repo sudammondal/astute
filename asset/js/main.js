@@ -230,7 +230,6 @@ $(document).ready(function () {
     }
   }, 1000);
 
-
   // ========== filtering========== //
 
   function isoTopActive() {
@@ -238,7 +237,7 @@ $(document).ready(function () {
 
     $('.filtering_item_row').imagesLoaded(function () {
       $(".filtering_item_row").isotope({
-        itemSelector: '.custom_col',
+        itemSelector: '.filter_items',
         layoutMode: 'fitRows'
       });
 
@@ -258,108 +257,7 @@ $(document).ready(function () {
       });
     });
   }
-  // isoTopActive();   
-
-
-
-  /*===========Portfolio isotope js===========*/
-  function portfolioMasonry() {
-    var portfolio = $(".filtering_item_row");
-    if (portfolio.length) {
-      portfolio.imagesLoaded(function () {
-        // images have loaded
-        // Activate isotope in container
-        portfolio.isotope({
-          itemSelector: ".custom_col",
-          layoutMode: 'masonry',
-          filter: "*",
-          animationOptions: {
-            duration: 1000
-          },
-          hiddenStyle: {
-            opacity: 0,
-            transform: 'scale(.4)rotate(60deg)',
-          },
-          visibleStyle: {
-            opacity: 1,
-            transform: 'scale(1)rotate(0deg)',
-          },
-          stagger: 0,
-          transitionDuration: '0.9s',
-          masonry: {
-
-          }
-        });
-
-        // Add isotope click function
-        $(".isotopmein button").on('click', function () {
-          $(".isotopmein button").removeClass("active");
-          $(this).addClass("active");
-
-          var selector = $(this).attr("data-filter");
-          portfolio.isotope({
-            filter: selector,
-            animationOptions: {
-              animationDuration: 750,
-              easing: 'linear',
-              queue: false
-            }
-          })
-          return false;
-        })
-      })
-    }
-  }
-  portfolioMasonry();
-
-
-  /*===========Portfolio isotope js===========*/
-
-
-
-
-
-  /*---------LIGHT-BOX js-----------*/
-  function lightBoxImages() {
-    var selectorG = '.icon_link';
-    if ($(selectorG).length) {
-      var instanceG = $(selectorG).imageLightbox({
-        quitOnDocClick: false,
-        button: true,
-        activity: true,
-        overlay: true,
-        arrows: true,
-        preloadNext: true,
-      });
-    }
-  }
-  lightBoxImages();
-
-
-
-  // function isoTopActive1() {
-  //   // Iso top js
-  //   $(".ctm_row").isotope({
-  //     itemSelector: '.ctm_col',
-  //     layoutMode: 'fitRows'
-  //   });
-
-  //   var isOacTive = $('.Isotopemanu button').click(function () {
-  //     $(".Isotopemanu button").removeClass("active");
-  //     $(this).addClass("active");
-  //     var selector = $(this).attr('data-filter');
-  //     $(".ctm_row").isotope({
-  //       filter: selector,
-  //       animationOptions: {
-  //         duration: 750,
-  //         easing: 'linear',
-  //         queue: false,
-  //       }
-  //     });
-  //     return false;
-  //   });
-  // }
-  // isoTopActive1();
+  isoTopActive();   
 
   /*---------LIGHT-BOX js-----------*/
   function lightBoxImages() {

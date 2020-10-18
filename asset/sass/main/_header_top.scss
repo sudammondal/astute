@@ -109,7 +109,8 @@ header.header {
                 li {
                     a {
                         display: inline-block;
-                        padding: 32px 5px;
+                        padding: 0px;
+                        margin: 30px 10px;
                         transition: .5s;
                         position: relative;
                         color: #333;
@@ -117,8 +118,28 @@ header.header {
                         font-weight: 600;
                         text-transform: capitalize;
                         font-family: 'Montserrat', sans-serif;
-                        &.nav-link {
-                            margin: 0 3px;
+                        &:hover {
+                            color: blue;
+                        }
+                        &::before {
+                            position  : absolute;
+                            content   : "";
+                            bottom    : 0;
+                            right     : 50%;
+                            width     : 0;
+                            height    : 2px;
+                            background: #eb1b2b;
+                            opacity   : 0;
+                            transition: all 0.5s;
+                        }
+                        &.active,
+                        &:hover {
+                            color: #eb1b2b;
+                            &::before {
+                                width  : 100%;
+                                right  : 0;
+                                opacity: 1;
+                            }
                         }
                     }
                     &:hover {
@@ -161,6 +182,7 @@ header.header {
     }
     &.fixedMenu { 
         background: #000;
+        box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.06);
         .navbar {
             padding: 0;
             .logoBrand {
@@ -180,7 +202,7 @@ header.header {
                     li {
                         a {
                             color: #fff;
-                            padding: 22px 5px;
+                            margin: 20px 10px;
                         }
                         &:hover {
                             background: transparent;

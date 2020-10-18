@@ -108,7 +108,6 @@
         .inputItem {
             position: relative;
             outline: none;
-
             .underLine {
                 position: absolute;
                 content: "";
@@ -116,7 +115,7 @@
                 left: 0;
                 height: 2px;
                 background-color: #eb1b2b;
-                transition: all 0.9s;
+                transition: all 0.5s;
                 width: 0;
                 opacity: 0;
                 z-index: 2;
@@ -140,11 +139,6 @@
             border-bottom: 1px solid #ddd;
             padding: 0;
             color: #fff;
-
-            &:hover,
-            &:focus {
-                // border-bottom-color: #eb1b2b;
-            }
         }
 
         ::placeholder {
@@ -153,7 +147,28 @@
 
         .from_group {
             margin-bottom: 30px;
+            width: 100%;
+            position: relative;
+            outline: none;
+            .underLine {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                background-color: #eb1b2b;
+                transition: all 0.9s;
+                width: 0;
+                opacity: 0;
+                z-index: 2;
+            }
 
+            textarea:focus {
+                & + .underLine {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
             textarea {
                 background: transparent;
                 border: 0;
@@ -164,11 +179,7 @@
                 padding: 0px;
                 height: 40px;
                 color: #fff;
-
-                &:hover,
-                &:focus {
-                    border-bottom-color: #eb1b2b;
-                }
+                
             }
 
             ::placeholder {
