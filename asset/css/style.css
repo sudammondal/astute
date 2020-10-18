@@ -1615,14 +1615,6 @@ header.header {
     border-bottom: 1px solid #ddd;
     padding: 0;
     color: #fff; }
-  .Contact_worp .main_form ::-webkit-input-placeholder {
-    color: #a29d9d; }
-  .Contact_worp .main_form :-ms-input-placeholder {
-    color: #a29d9d; }
-  .Contact_worp .main_form ::-ms-input-placeholder {
-    color: #a29d9d; }
-  .Contact_worp .main_form ::placeholder {
-    color: #a29d9d; }
   .Contact_worp .main_form .from_group {
     margin-bottom: 30px;
     width: 100%;
@@ -1655,14 +1647,6 @@ header.header {
       padding: 0px;
       height: 40px;
       color: #fff; }
-    .Contact_worp .main_form .from_group ::-webkit-input-placeholder {
-      color: #a29d9d; }
-    .Contact_worp .main_form .from_group :-ms-input-placeholder {
-      color: #a29d9d; }
-    .Contact_worp .main_form .from_group ::-ms-input-placeholder {
-      color: #a29d9d; }
-    .Contact_worp .main_form .from_group ::placeholder {
-      color: #a29d9d; }
 
 .commentbox .from_main {
   width: 100%; }
