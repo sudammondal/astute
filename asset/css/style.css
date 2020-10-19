@@ -1801,19 +1801,39 @@ header.header {
   .footer_worp .Newsletter .helpLink .helplmanu {
     list-style: none; }
     .footer_worp .Newsletter .helpLink .helplmanu .list-itme {
-      padding: 3px 0; }
+      margin: 5px 0; }
       .footer_worp .Newsletter .helpLink .helplmanu .list-itme a {
+        position: relative;
+        padding: 3px 0;
+        padding-left: 5px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
         text-decoration: none;
         color: #fff;
         font-size: 14px;
         font-weight: 400;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
         transition: all 0.5s; }
+        .footer_worp .Newsletter .helpLink .helplmanu .list-itme a::before {
+          position: absolute;
+          content: "";
+          top: 12px;
+          left: 0;
+          width: 10px;
+          height: 2px;
+          background-color: #fff;
+          visibility: hidden;
+          opacity: 0;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
         .footer_worp .Newsletter .helpLink .helplmanu .list-itme a:hover {
+          padding-left: 15px;
           color: #eb1b2b; }
-      .footer_worp .Newsletter .helpLink .helplmanu .list-itme:first-child {
-        padding-top: 0; }
+          .footer_worp .Newsletter .helpLink .helplmanu .list-itme a:hover::before {
+            background-color: #eb1b2b;
+            visibility: visible;
+            opacity: 1; }
   .footer_worp .Newsletter .Instagram .castomRow {
     margin-left: 0;
     margin-right: 0; }
@@ -1877,6 +1897,13 @@ header.header {
       margin: 0; }
       .footer .footer_bottom .bottom_fter .list-itme {
         padding: 0 10px; }
+        .footer .footer_bottom .bottom_fter .list-itme::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 10px;
+          height: 2px;
+          background-color: #fff; }
         .footer .footer_bottom .bottom_fter .list-itme a {
           text-decoration: none;
           color: #fff;

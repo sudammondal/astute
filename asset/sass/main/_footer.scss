@@ -121,21 +121,42 @@
             .helplmanu {
                 list-style: none;
                 .list-itme {
-                    padding: 3px 0;
+                    margin: 5px 0;
                     a {
+                        position: relative;
+                        padding: 3px 0;
+                        padding-left: 5px;
+                        transition: all 0.5s;
                         text-decoration: none;
                         color: #fff;
                         font-size: 14px;
                         font-weight: 400;
                         transition: all 0.5s;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            top: 12px;
+                            left: 0;
+                            width: 10px;
+                            height: 2px;
+                            background-color: #fff;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all 0.5s;
+                        }
                         &:hover {
+                            padding-left: 15px;  
                             color: #eb1b2b;
+                                &::before  {
+                                background-color: #eb1b2b;
+                                visibility: visible ;
+                                opacity: 1;
+
+                            }
                         }
                     }
                    
-                    &:first-child {
-                        padding-top: 0;
-                    }
+                
                 }
             }
         }
@@ -216,6 +237,14 @@
             margin: 0;
             .list-itme {
                 padding: 0 10px;
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 10px;
+                    height: 2px;
+                    background-color: #fff;
+                }
                 a {
                     text-decoration: none;
                     color: #fff;

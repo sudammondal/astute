@@ -260,8 +260,14 @@
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-12  col-12 ">
 					<div class="video_main">
-						<a class="viveoLink popup-youtube" href="https://player.vimeo.com/video/38303529">
+						<a class="viveoLink popup-youtube" id="demo" href="https://player.vimeo.com/video/38303529">
 							<i class="fa fa-youtube-play"></i> WATCH NOW
+							<video id="myVideo" width="320" height="240" controls autoplay>
+								<source src="./asset/video/mov_bbb.mp4" type="video/mp4">
+								<source src="movie.ogg" type="video/ogg">
+								Your browser does not support the video tag.
+							</video>
+							  
 						</a>
 					</div>
 					
@@ -1373,7 +1379,9 @@
 				<div class="col-xl-6 col-lg-6 col-md-12 col-12">
 					<div class="footer_bottom">
 						<ul class="bottom_fter ml-auto">
-							<li class="list-itme"> <a href="#"> home </a> </li>
+							<li class="list-itme"> 
+								<a href="#"> home </a> 
+							</li>
 							<li class="list-itme"> <a href="#"> about </a> </li>
 							<li class="list-itme"> <a href="#"> team </a> </li>
 							<li class="list-itme"> <a href="#"> register </a> </li>
