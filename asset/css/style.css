@@ -762,6 +762,21 @@ header.header {
 .imagelightbox-arrow {
   margin-top: 0; }
 
+button.imagelightbox-arrow-right,
+button.imagelightbox-arrow-left {
+  border-radius: 5px;
+  outline: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  button.imagelightbox-arrow-right:hover, button.imagelightbox-arrow-right:focus,
+  button.imagelightbox-arrow-left:hover,
+  button.imagelightbox-arrow-left:focus {
+    background-color: #eb1b2b; }
+  button.imagelightbox-arrow-right:active,
+  button.imagelightbox-arrow-left:active {
+    background-color: #000; }
+
 .VOLUNTEER {
   padding: 55px 0 100px; }
   .VOLUNTEER .ovErlay {
@@ -1615,6 +1630,14 @@ header.header {
     border-bottom: 1px solid #ddd;
     padding: 0;
     color: #fff; }
+  .Contact_worp .main_form ::-webkit-input-placeholder {
+    color: #a29d9d; }
+  .Contact_worp .main_form :-ms-input-placeholder {
+    color: #a29d9d; }
+  .Contact_worp .main_form ::-ms-input-placeholder {
+    color: #a29d9d; }
+  .Contact_worp .main_form ::placeholder {
+    color: #a29d9d; }
   .Contact_worp .main_form .from_group {
     margin-bottom: 30px;
     width: 100%;
@@ -1647,36 +1670,14 @@ header.header {
       padding: 0px;
       height: 40px;
       color: #fff; }
-
-.commentbox .from_main {
-  width: 100%; }
-  .commentbox .from_main .from_grups {
-    position: relative; }
-    .commentbox .from_main .from_grups .control_form {
-      margin: 0px;
-      padding: 0px;
-      color: #000;
-      border: 0;
-      background: transparent;
-      border-bottom: 2px solid blue;
-      border-radius: 0;
-      -webkit-box-shadow: none;
-      box-shadow: none; }
-    .commentbox .from_main .from_grups .underline {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: #eb1b2b;
-      opacity: 0;
-      -webkit-transition: all 0.9s;
-      -o-transition: all 0.9s;
-      transition: all 0.9s; }
-    .commentbox .from_main .from_grups .control_form:focus + .underline {
-      width: 100%;
-      opacity: 1; }
+    .Contact_worp .main_form .from_group ::-webkit-input-placeholder {
+      color: #a29d9d; }
+    .Contact_worp .main_form .from_group :-ms-input-placeholder {
+      color: #a29d9d; }
+    .Contact_worp .main_form .from_group ::-ms-input-placeholder {
+      color: #a29d9d; }
+    .Contact_worp .main_form .from_group ::placeholder {
+      color: #a29d9d; }
 
 .footer_worp {
   background: #1a1a1a;
@@ -1913,7 +1914,7 @@ header.header {
       .footer .up_iconFixd a:hover {
         background-color: transparent;
         color: #eb1b2b;
-        border-color: #fff; }
+        border-color: #eb1b2b; }
         .footer .up_iconFixd a:hover i {
           display: none; }
         .footer .up_iconFixd a:hover span {

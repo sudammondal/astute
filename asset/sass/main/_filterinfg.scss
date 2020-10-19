@@ -150,3 +150,17 @@
 .imagelightbox-arrow {
     margin-top: 0;
 }
+button.imagelightbox-arrow-right,
+button.imagelightbox-arrow-left {
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.5s;
+    &:hover,
+    &:focus {
+        background-color: #eb1b2b;
+    }
+    &:active {
+        background-color: #000;
+
+    }
+}
