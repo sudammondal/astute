@@ -748,34 +748,35 @@ header.header {
       opacity: 1;
       visibility: visible; }
 
-.imagelightbox-arrow-right:before {
-  font-family: 'fontawesome';
-  content: "\f105" !important; }
+.imagelightbox-wrapper button:hover,
+.imagelightbox-wrapper a:hover {
+  background-color: #000; }
 
-.imagelightbox-arrow-left:before {
+.imagelightbox-wrapper .imagelightbox-arrow {
+  margin-top: 0; }
+
+.imagelightbox-wrapper .imagelightbox-close {
+  top: 10px; }
+
+.imagelightbox-wrapper .imagelightbox-arrow-left:before {
   content: "\f104" !important;
   font-family: 'fontawesome'; }
 
-.imagelightbox-close {
-  top: 10px; }
+.imagelightbox-wrapper .imagelightbox-arrow-right:before {
+  font-family: 'fontawesome';
+  content: "\f105" !important; }
 
-.imagelightbox-arrow {
-  margin-top: 0; }
-
-button.imagelightbox-arrow-right,
-button.imagelightbox-arrow-left {
+.imagelightbox-wrapper .imagelightbox-arrow-right,
+.imagelightbox-wrapper .imagelightbox-arrow-left {
   border-radius: 5px;
   outline: none;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  button.imagelightbox-arrow-right:hover, button.imagelightbox-arrow-right:focus,
-  button.imagelightbox-arrow-left:hover,
-  button.imagelightbox-arrow-left:focus {
-    background-color: #eb1b2b; }
-  button.imagelightbox-arrow-right:active,
-  button.imagelightbox-arrow-left:active {
-    background-color: #000; }
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+  .imagelightbox-wrapper .imagelightbox-arrow-right:hover,
+  .imagelightbox-wrapper .imagelightbox-arrow-left:hover {
+    background-color: #000 !important; }
 
 .VOLUNTEER {
   padding: 55px 0 100px; }

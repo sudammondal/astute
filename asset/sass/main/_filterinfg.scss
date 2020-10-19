@@ -133,34 +133,42 @@
 }
 
 //=====lightbox =====// 
-.imagelightbox-arrow-right:before {
-    font-family: 'fontawesome';
-    content: "\f105" !important;
-}
 
-.imagelightbox-arrow-left:before {
-    content: "\f104" !important;
-    font-family: 'fontawesome';
-}
+.imagelightbox-wrapper {
+    button,
+    a {
+        &:hover {
+            background-color: #000;
 
-.imagelightbox-close {
-    top: 10px;
-}
-
-.imagelightbox-arrow {
-    margin-top: 0;
-}
-button.imagelightbox-arrow-right,
-button.imagelightbox-arrow-left {
-    border-radius: 5px;
-    outline: none;
-    transition: all 0.5s;
-    &:hover,
-    &:focus {
-        background-color: #eb1b2b;
+        }
     }
-    &:active {
-        background-color: #000;
-
+    .imagelightbox-arrow {
+        margin-top: 0;
     }
+    .imagelightbox-close {
+        top: 10px;
+    }
+    .imagelightbox-arrow-left:before {
+        content: "\f104" !important;
+        font-family: 'fontawesome';
+    }
+    .imagelightbox-arrow-right:before {
+        font-family: 'fontawesome';
+        content: "\f105" !important;
+    }
+
+    .imagelightbox-arrow-right,
+    .imagelightbox-arrow-left {
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.5s;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        &:hover {
+            background-color: #000 !important;
+        }
+    }
+
 }
+
+   
+    
