@@ -911,7 +911,10 @@ header.header {
         text-transform: capitalize;
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
-        border-radius: 0px; }
+        border-radius: 0px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
         .Goalsworp .goalaeorp_main .nav_manu .mav_items .nav_link.active, .Goalsworp .goalaeorp_main .nav_manu .mav_items .nav_link:hover {
           background-color: #eb1b2b; }
     .Goalsworp .goalaeorp_main .tab_content .tab_pane .video_worp {
@@ -1050,7 +1053,10 @@ header.header {
           padding: 15px 12px 15px 50px;
           font-size: 16px;
           font-weight: 500;
-          font-family: 'Poppins', sans-serif; }
+          font-family: 'Poppins', sans-serif;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
           .Goalsworp .goalaeorp_main .colops_itme .col_aps .card .cars_main .hed_fiv .cicon_position {
             position: absolute;
             top: 9px;
