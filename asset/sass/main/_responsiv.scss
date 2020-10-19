@@ -4,7 +4,6 @@
         font-size: 30px;
     }
     .MEMBER_revew .MissionTitle .Missionhead {
-       
         font-size: 30px;
     }
     .Newsletter {
@@ -27,6 +26,9 @@
         .contact_bottom {
             margin-bottom: 50px;
         }
+    }
+    .election_worp .countdown .count_main .colon {
+        right: -20px;
     }
     
 }
@@ -73,6 +75,12 @@
     .countdown .count_main {
         font-size: 32px;
         padding: 34px 40px;
+    }
+    .election_worp .countdown .count_main .colon {
+        right: -15px;
+    }
+    .election_worp .countdown .count_main {
+        padding: 34px 35px;
     }
 
 }
@@ -142,6 +150,10 @@
         font-size: 30px;
         padding: 34px 40px;
     }
+    .election_worp .countdown .count_main {
+        padding: 34px 35px;
+    }
+
    
 }
 
@@ -243,6 +255,9 @@
         font-size: 14px;
         border-bottom: 50px;
     }
+    .election_worp .countdown .count_main .colon {
+        right: -14px;
+    }
     .Goalsworp .media_header .media_hed {
         font-size: 30px;
         font-weight: 600; 
@@ -308,6 +323,9 @@
             }
         }
     }
+    .election_worp .countdown .count_main {
+        padding: 34px 15px;
+    }
 
 
 }
@@ -320,6 +338,10 @@
     }
     .countdown .colon {
         display: none;
+    }
+    .election_worp .countdown .count_main {
+        padding: 34px 50px;
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 420px) {
@@ -423,7 +445,10 @@
     }
     .countdown .count_main {
         font-size: 30px;
-        padding: 34px 63px;
+    }
+    .election_worp .countdown .count_main {
+        padding: 30px 60px;
+        margin-bottom: 30px;
     }
 
 }

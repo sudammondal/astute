@@ -1975,7 +1975,9 @@ header.header {
     margin-bottom: 30px;
     text-align: center; }
   .Contact_worp .contact_bottom {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .election_worp .countdown .count_main .colon {
+    right: -20px; } }
 
 @media (max-width: 991px) {
   .brand_worp .brand_item {
@@ -2007,7 +2009,11 @@ header.header {
     margin-bottom: 20px; }
   .countdown .count_main {
     font-size: 32px;
-    padding: 34px 40px; } }
+    padding: 34px 40px; }
+  .election_worp .countdown .count_main .colon {
+    right: -15px; }
+  .election_worp .countdown .count_main {
+    padding: 34px 35px; } }
 
 @media (max-width: 768px) {
   .header_top .top_head .contac a {
@@ -2052,7 +2058,9 @@ header.header {
     margin-bottom: 20px; }
   .countdown .count_main {
     font-size: 30px;
-    padding: 34px 40px; } }
+    padding: 34px 40px; }
+  .election_worp .countdown .count_main {
+    padding: 34px 35px; } }
 
 @media (max-width: 736px) {
   .header_top .top_head .contac a {
@@ -2122,6 +2130,8 @@ header.header {
     border-radius: 50px;
     font-size: 14px;
     border-bottom: 50px; }
+  .election_worp .countdown .count_main .colon {
+    right: -14px; }
   .Goalsworp .media_header .media_hed {
     font-size: 30px;
     font-weight: 600; }
@@ -2160,14 +2170,19 @@ header.header {
   .countdown .colon {
     top: 40%; }
   .brand_worp .brand_item img {
-    padding: 0; } }
+    padding: 0; }
+  .election_worp .countdown .count_main {
+    padding: 34px 15px; } }
 
 @media (max-width: 568px) {
   .countdown .count_main {
     font-size: 22px;
     padding: 34px 60px; }
   .countdown .colon {
-    display: none; } }
+    display: none; }
+  .election_worp .countdown .count_main {
+    padding: 34px 50px;
+    margin-bottom: 30px; } }
 
 @media (max-width: 420px) {
   .header_top {
@@ -2238,8 +2253,10 @@ header.header {
   .countdown .colon {
     display: none; }
   .countdown .count_main {
-    font-size: 30px;
-    padding: 34px 63px; } }
+    font-size: 30px; }
+  .election_worp .countdown .count_main {
+    padding: 30px 60px;
+    margin-bottom: 30px; } }
 
 @media (max-width: 375px) {
   .banner_worp .banner .main_banner .banerHed {
