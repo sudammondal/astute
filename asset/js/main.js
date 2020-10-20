@@ -316,6 +316,6 @@ $(document).ready(function () {
       , autoplaySpeed: 2000,
       easing: 'linear'
     });
-  // }(jQuery)
+  }(jQuery)
 
 });
