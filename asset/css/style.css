@@ -238,8 +238,7 @@ header.header {
     display: block;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
-    transition: all 0.5s;
-    right: -60px; }
+    transition: all 0.5s; }
     .banner_worp .banner_slide .slick-next::before {
       content: '→';
       font-family: 'fontawesome';
@@ -270,8 +269,7 @@ header.header {
     display: block;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
-    transition: all 0.5s;
-    left: -70px; }
+    transition: all 0.5s; }
     .banner_worp .banner_slide .slick-prev::before {
       content: '←';
       font-family: 'fontawesome';
@@ -297,97 +295,83 @@ header.header {
       background-color: #eb1b2b;
       border-color: #eb1b2b; }
   .banner_worp .banner_slide:hover .slick-prev {
-    left: -50px;
     visibility: visible;
     opacity: 1;
     z-index: 2; }
   .banner_worp .banner_slide:hover .slick-next {
     visibility: visible;
     opacity: 1;
-    z-index: 2;
-    right: -40px; }
-  .banner_worp .banner .main_banner {
-    text-align: left; }
-    .banner_worp .banner .main_banner .banerHed {
-      margin: 0 0 10px;
-      font-size: 66px;
-      font-weight: 600;
-      color: #fff; }
-    .banner_worp .banner .main_banner .banner_pra {
-      max-width: 690px;
-      width: 100%;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 1.6;
-      color: #fff;
-      margin: 0 0 43px 5px; }
-    .banner_worp .banner .main_banner .banerHed2 {
-      color: #fff;
-      font-size: 38px;
-      font-weight: 700;
-      margin-bottom: 21px; }
-    .banner_worp .banner .main_banner .banner_pra2 {
-      width: 100%;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 1.6;
-      color: #fff;
-      margin: 0 auto 43px; }
-    .banner_worp .banner .main_banner .banner_pra3 {
-      max-width: 690px;
-      width: 100%;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 1.6;
-      color: #fff;
-      margin-bottom: 43px;
-      margin-right: 0; }
-    .banner_worp .banner .main_banner .banner_button {
-      font-size: 14px;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      border: 1px solid #eb1b2b;
-      color: #fff;
-      background-color: #eb1b2b;
-      padding: 9px 37px;
-      font-weight: 500;
-      text-transform: uppercase;
-      box-shadow: none;
-      outline: none;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      border-radius: 50px;
-      text-decoration: none;
-      display: inline-block;
-      margin-right: 8px; }
-      .banner_worp .banner .main_banner .banner_button:hover {
-        background: transparent;
-        border-color: #fff; }
-    .banner_worp .banner .main_banner .bnarbtn {
-      font-size: 14px;
-      outline: none;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      border: 1px solid #fff;
-      color: #fff;
+    z-index: 2; }
+  .banner_worp .banner .main_banner .banerHed {
+    margin: 0 0 10px;
+    font-size: 66px;
+    font-weight: 600;
+    color: #fff; }
+  .banner_worp .banner .main_banner .banner_pra {
+    max-width: 690px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #fff;
+    margin: 0 0 43px 5px; }
+  .banner_worp .banner .main_banner .banerHed2 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 21px; }
+  .banner_worp .banner .main_banner .banner_pra2 {
+    margin: 0 auto 43px; }
+  .banner_worp .banner .main_banner .banner_pra3 {
+    max-width: 690px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #fff; }
+  .banner_worp .banner .main_banner .banner_button {
+    font-size: 14px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #eb1b2b;
+    color: #fff;
+    background-color: #eb1b2b;
+    padding: 9px 37px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: none;
+    outline: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 8px; }
+    .banner_worp .banner .main_banner .banner_button:hover {
       background: transparent;
-      padding: 9px 37px;
-      font-weight: 500;
-      text-transform: uppercase;
-      box-shadow: none;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      border-radius: 50px;
-      text-decoration: none;
-      display: inline-block; }
-      .banner_worp .banner .main_banner .bnarbtn:hover {
-        background: #eb1b2b;
-        border-color: #eb1b2b; }
-
-.banner_worp .banner_slid.slick-next {
-  display: none; }
+      border-color: #fff; }
+  .banner_worp .banner .main_banner .bnarbtn {
+    font-size: 14px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 9px 37px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block; }
+    .banner_worp .banner .main_banner .bnarbtn:hover {
+      background: #eb1b2b;
+      border-color: #eb1b2b; }
 
 .about_us {
   padding: 95px 0;
