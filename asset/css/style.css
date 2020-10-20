@@ -523,8 +523,7 @@ header.header {
     margin-left: -35px; }
 
 .Volunteers {
-  padding-bottom: 70px;
-  overflow: hidden; }
+  padding-bottom: 70px; }
   .Volunteers .VolunteersMain {
     padding: 37px 27px 39px;
     -webkit-transition: all 0.5s;
@@ -533,8 +532,7 @@ header.header {
     background: #fff;
     -webkit-box-shadow: 0px 6px 14px 0px #00000024;
     box-shadow: 0px 6px 14px 0px #00000024;
-    margin-bottom: 30px;
-    transition: all 0.5s; }
+    margin-bottom: 30px; }
     .Volunteers .VolunteersMain .VolunteersHead {
       margin: 5px 0 10px;
       font-size: 18px;
