@@ -239,7 +239,7 @@ header.header {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    right: -40px; }
+    right: -60px; }
     .banner_worp .banner_slide .slick-next::before {
       content: '→';
       font-family: 'fontawesome';
@@ -271,7 +271,7 @@ header.header {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    left: -60px; }
+    left: -70px; }
     .banner_worp .banner_slide .slick-prev::before {
       content: '←';
       font-family: 'fontawesome';
@@ -297,7 +297,7 @@ header.header {
       background-color: #eb1b2b;
       border-color: #eb1b2b; }
   .banner_worp .banner_slide:hover .slick-prev {
-    left: -8px;
+    left: -50px;
     visibility: visible;
     opacity: 1;
     z-index: 2; }
@@ -305,7 +305,7 @@ header.header {
     visibility: visible;
     opacity: 1;
     z-index: 2;
-    right: -50px; }
+    right: -40px; }
   .banner_worp .banner .main_banner {
     text-align: left; }
     .banner_worp .banner .main_banner .banerHed {
