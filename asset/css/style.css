@@ -333,6 +333,15 @@ header.header {
       line-height: 1.6;
       color: #fff;
       margin: 0 auto 43px; }
+    .banner_worp .banner .main_banner .banner_pra3 {
+      max-width: 690px;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #fff;
+      margin-bottom: 43px;
+      margin-right: 0; }
     .banner_worp .banner .main_banner .banner_button {
       font-size: 14px;
       -webkit-box-shadow: none;
