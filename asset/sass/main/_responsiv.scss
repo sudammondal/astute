@@ -1,5 +1,8 @@
 @media (max-width: 1024px) {
-  
+    .banner_worp .banner .main_banner .banerHed2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
     .Mission .mainMission .MissionTitle .Missionhead {
         font-size: 30px;
     }
@@ -39,6 +42,7 @@
     .header_top .top_head .contac a {
         font-size: 13px;
     }
+    
     .countain_worp .main_counting {
         margin-bottom: 30px;
     }
@@ -104,8 +108,14 @@
     .banner_worp .banner .main_banner .banerHed {
         font-size: 46px;
     }
+    .banner_worp .banner .main_banner .banerHed2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
     .Mission .mainMission .massionPra {
         margin-left: 0px;
+        
     }
     .Mission .mainMission .MissionTitle::after {
         right: 5px; 
@@ -166,6 +176,10 @@
     }
     .banner_worp .banner .main_banner .banerHed {
         font-size: 40px;
+    }
+    .banner_worp .banner .main_banner .banerHed2 {
+        font-size: 22px;
+        font-weight: 400;
     }
     .banner_worp .banner .main_banner .banner_pra {
         font-weight: 300;
@@ -351,6 +365,10 @@
     .banner_worp .banner .main_banner .banerHed {
         font-size: 30px;
     } 
+    .banner_worp .banner .main_banner .banerHed2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
     .about_us .about_main .about_head {
         font-size: 30px;
     }

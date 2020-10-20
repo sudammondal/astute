@@ -163,13 +163,13 @@
                 z-index: 2;
             }
 
-            .tttfff:focus {
+            .textAria:focus {
                 & + .underLine {
                     width: 100%;
                     opacity: 1;
                 }
             }
-            .tttfff {
+            .textAria {
                 background: transparent;
                 border: 0;
                 border-bottom: 1px solid #ddd;

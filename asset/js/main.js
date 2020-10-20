@@ -81,7 +81,7 @@ $(document).ready(function () {
   });
 
   $('.sssyour-class').slick({
-    arrows: false,
+    arrows: true,
     autoplay: true,
     dots: true,
     infinite: true,
@@ -306,5 +306,16 @@ $(document).ready(function () {
     var x = document.getElementById("myVideo").autoplay;
     document.getElementById("demo").innerHTML = x;
   }
+
+
+  ! function (e) {
+    "use strict";
+    $('.banner_slide').slick({
+      autoplay: true
+      , arrows: true
+      , autoplaySpeed: 2000,
+      easing: 'linear'
+    });
+  }(jQuery)
 
 });
