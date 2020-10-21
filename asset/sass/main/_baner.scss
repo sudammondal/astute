@@ -17,81 +17,7 @@
         position: absolute;
         opacity: 0.7;
     }
-    .banner_slide {
-        .slick-next{
-            visibility: hidden;
-            opacity: 0;
-            display: block;
-            transition: all 0.5s;
-            // right: -60px;
-            &::before {
-                content: '→';
-                font-family: 'fontawesome';
-                border-radius: 50px;
-                border: 1px solid #fff;
-                font-size: 25px;
-                color: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 40px;
-                height: 40px;
-                transition: all 0.5s;
-            }  
-            &:hover{
-                &::before {
-                    background-color: #eb1b2b;
-                    border-color: #eb1b2b;
-                }
-                
-            }
-        }
-        .slick-prev {
-            visibility: hidden;
-            opacity: 0;
-            display: block;
-            transition: all 0.5s;
-            // left: -70px;
-            &::before {
-                content: '←';
-                font-family: 'fontawesome';
-                border-radius: 50px;
-                border: 1px solid #fff;
-                font-size: 25px;
-                color: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 40px;
-                height: 40px;
-                transition: all 0.5s;
-            }
-            &:hover{
-                &::before {
-                    background-color: #eb1b2b;
-                    border-color: #eb1b2b;
-                }
-                
-            }
-
-        }
-        &:hover {
-            .slick-prev{
-                // left: -50px;
-                visibility: visible;
-                opacity: 1;
-                z-index: 2;
-            }
-            .slick-next {
-                visibility: visible;
-                opacity: 1;
-                z-index: 2;
-                // right: -40px;
-                
-            }
-        }
-
-    }
+   
     .banner {
         .main_banner {
             .banerHed {
@@ -109,22 +35,17 @@
                 color: #fff;
                 margin: 0 0 43px 5px;
             }
-            .banerHed2 {
-                color: #fff;
-                font-size: 38px;
-                font-weight: 700;
-                margin-bottom: 21px;
-            }
-            .banner_pra2 {
-                margin: 0 auto 43px;
-            }
+            // .banerHed2 {
+            //     color: #fff;
+            //     font-size: 38px;
+            //     font-weight: 700;
+            //     margin-bottom: 21px;
+            // }
+            // .banner_pra2 {
+            //     margin: 0 auto 43px;
+            // }
             .banner_pra3 {
-                max-width: 690px;
-                width: 100%;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 1.6;
-                color: #fff;
+                margin-left: auto;
             }
             .banner_button {
                 font-size: 14px;
@@ -172,3 +93,62 @@
     }
     
 }
+.banner_slide {
+    
+    button.slick-prev {
+        z-index: 3;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        transition: all 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    button.slick-next {
+        z-index: 3;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        transition: all 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        
+    }
+    button,
+    .slick-next,
+    .slick-prev {
+        &::before {
+            font-family: 'FontAwesome';
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 40px;
+            font-size: 20px;
+            transition: all 0.5s;
+        }
+        &:hover {
+            &::before {
+                background-color: #eb1b2b;
+                border-color: #eb1b2b;
+            }
+            
+        }
+    }
+    &:hover {
+        button.slick-prev {
+            z-index: 3;
+            left: 30px;
+            opacity: 1;
+            z-index: 1;
+            visibility: visible;
+        }
+        button.slick-next {
+            z-index: 3;
+            right: 30px;
+            opacity: 1;
+            z-index: 1;
+            visibility: visible;
+        } 
+    }
+
+}
+

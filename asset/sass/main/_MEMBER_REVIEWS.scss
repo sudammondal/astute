@@ -123,49 +123,7 @@
                 
             }
         }
-        .slick-prev {
-            visibility: hidden;
-            opacity: 0;
-            display: block;
-            transition: all 0.5s;
-            left: -50px;
-            &::before {
-                content: '←';
-                font-family: 'fontawesome';
-                border-radius: 50px;
-                border: 1px solid #eb1b2b;
-                font-size: 25px;
-                color: #000;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 40px;
-                height: 40px;
-                transition: all 0.5s;
-            }
-            &:hover{
-                &::before {
-                    background-color: #eb1b2b;
-                    border-color: #eb1b2b;
-                    color: #fff;
-                }
-                
-            }
-
-        }
-        &:hover {
-            .slick-prev{
-                visibility: visible;
-                opacity: 1;
-                z-index: 2;
-            }
-            .slick-next {
-                visibility: visible;
-                opacity: 1;
-                z-index: 2;
-                
-            }
-        }
+    
     }
     
     
