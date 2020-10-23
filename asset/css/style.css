@@ -128,8 +128,6 @@ header.header {
       font-weight: 600;
       text-transform: capitalize;
       font-family: 'Montserrat', sans-serif; }
-      header.header .navbar .maincollaps .main_manu li a:hover {
-        color: blue; }
       header.header .navbar .maincollaps .main_manu li a::before {
         position: absolute;
         content: "";
@@ -195,8 +193,25 @@ header.header {
       header.header.fixedMenu .navbar button .bar {
         background-color: #fff; }
       header.header.fixedMenu .navbar .maincollaps .main_manu li a {
-        color: #fff;
-        margin: 20px 10px; }
+        color: #fff; }
+        header.header.fixedMenu .navbar .maincollaps .main_manu li a::before {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          right: 50%;
+          width: 0;
+          height: 2px;
+          background: #eb1b2b;
+          opacity: 0;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        header.header.fixedMenu .navbar .maincollaps .main_manu li a.active, header.header.fixedMenu .navbar .maincollaps .main_manu li a:hover {
+          color: #eb1b2b; }
+          header.header.fixedMenu .navbar .maincollaps .main_manu li a.active::before, header.header.fixedMenu .navbar .maincollaps .main_manu li a:hover::before {
+            width: 100%;
+            right: 0;
+            opacity: 1; }
       header.header.fixedMenu .navbar .maincollaps .main_manu li:hover {
         background: transparent; }
         header.header.fixedMenu .navbar .maincollaps .main_manu li:hover a {
@@ -460,7 +475,8 @@ header.header {
     margin-left: -35px; }
 
 .Volunteers {
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  margin: 30px 0; }
   .Volunteers .VolunteersMain {
     padding: 37px 27px 39px;
     -webkit-transition: all 0.5s;
@@ -468,8 +484,7 @@ header.header {
     transition: all 0.5s;
     background: #fff;
     -webkit-box-shadow: 0px 6px 14px 0px #00000024;
-    box-shadow: 0px 6px 14px 0px #00000024;
-    margin-bottom: 30px; }
+    box-shadow: 0px 6px 14px 0px #00000024; }
     .Volunteers .VolunteersMain .VolunteersHead {
       margin: 5px 0 10px;
       font-size: 18px;
@@ -2067,12 +2082,10 @@ header.header {
     transition: all 0.5s; }
 
 @media (max-width: 1024px) {
-  .banner_worp .banner .main_banner .banerHed2 {
+  .banner_slide .banner_worp .banner .main_banner .banerHed2 {
     font-size: 30px;
     font-weight: 500; }
   .Mission .mainMission .MissionTitle .Missionhead {
-    font-size: 30px; }
-  .MEMBER_revew .MissionTitle .Missionhead {
     font-size: 30px; }
   .Newsletter {
     margin-bottom: 30px; }
@@ -2087,10 +2100,19 @@ header.header {
   .Contact_worp .contact_bottom {
     margin-bottom: 50px; }
   .election_worp .countdown .count_main .colon {
-    right: -20px; } }
+    right: -20px; }
+  header.header .navbar .maincollaps .main_manu {
+    height: 200px;
+    overflow: scroll;
+    margin: 10px 0; }
+    header.header .navbar .maincollaps .main_manu li a {
+      margin: 10px 10px; } }
 
 @media (max-width: 991px) {
-  .brand_worp .brand_item {
+  header
+.fixedMenu .navbar .maincollaps .main_manu li {
+    margin: 10px; }
+  .banner_slide .brand_worp .brand_item {
     margin-bottom: 30px; }
   .header_top .top_head .contac a {
     font-size: 13px; }
@@ -2115,15 +2137,12 @@ header.header {
   .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items .slid_pra2 {
     max-width: 100%;
     margin: 0; }
-  .countdown .count_main {
-    margin-bottom: 20px; }
-  .countdown .count_main {
-    font-size: 32px;
-    padding: 34px 40px; }
-  .election_worp .countdown .count_main .colon {
-    right: -15px; }
   .election_worp .countdown .count_main {
-    padding: 34px 35px; } }
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding: 34px 35px; }
+    .election_worp .countdown .count_main .colon {
+      right: -15px; } }
 
 @media (max-width: 768px) {
   .header_top .top_head .contac a {
@@ -2132,14 +2151,15 @@ header.header {
     overflow-y: scroll;
     height: 200px;
     margin: 20px; }
-  header.header.fixedMenu .navbar .maincollaps .main_manu li a {
+  header .navbar .maincollaps .main_manu li a,
+  .fixedMenu .navbar .maincollaps .main_manu li a {
     color: #fff;
-    padding: 30px 5px; }
-  header.header .navbar .maincollaps .main_manu li a.nav-link {
-    margin: -20px 3px; }
-  .banner_worp .banner .main_banner .banerHed {
+    padding: 0px 5px; }
+  header .navbar .maincollaps .main_manu li .nav-link {
+    margin: 10px 3px; }
+  .banner_slide .banner_worp .banner .main_banner .banerHed {
     font-size: 46px; }
-  .banner_worp .banner .main_banner .banerHed2 {
+  .banner_slide .banner_worp .banner .banerHed2 {
     font-size: 30px;
     font-weight: 500; }
   .Mission .mainMission .massionPra {
@@ -2152,44 +2172,41 @@ header.header {
     margin-bottom: 30px; }
   .about_us .about_imgs img {
     width: 100%; }
-  .countain_worp .main_counting {
-    margin-bottom: 30px; }
   .countain_worp {
     padding-bottom: -30px; }
+    .countain_worp .main_counting {
+      margin-bottom: 30px; }
   .watch_worp .video_main {
     text-align: center;
     margin-top: 50px; }
-  .watch_worp .video_main .viveoLink {
-    font-size: 20px; }
+    .watch_worp .video_main .viveoLink {
+      font-size: 20px; }
   .VOLUNTEER .ovErlay {
     margin-bottom: 30px; }
   .brand_worp {
     margin-bottom: -30px; }
-  .brand_worp .brand_item {
-    margin-bottom: 30px; }
-  .countdown .count_main {
-    margin-bottom: 20px; }
-  .countdown .count_main {
-    font-size: 30px;
-    padding: 34px 40px; }
+    .brand_worp .brand_item {
+      margin-bottom: 30px; }
   .election_worp .countdown .count_main {
-    padding: 34px 35px; } }
+    padding: 34px 35px;
+    margin-bottom: 20px;
+    font-size: 30px; } }
 
 @media (max-width: 736px) {
   .header_top .top_head .contac a {
     font-size: 9px; }
   .header_top .top_head .icon_manu .icon_list .icons {
     font-size: 12px; }
-  .banner_worp .banner .main_banner .banerHed {
+  .banner_slide .banner_worp .banner .main_banner .banerHed {
     font-size: 40px; }
-  .banner_worp .banner .main_banner .banerHed2 {
-    font-size: 22px;
+  .banner_slide .banner_worp .banner .main_banner .banerHed2 {
+    font-size: 20px;
     font-weight: 400; }
-  .banner_worp .banner .main_banner .banner_pra {
+  .banner_slide .banner_worp .banner .main_banner .banner_pra {
     font-weight: 300; }
-  .banner_worp .banner .main_banner .banner_button {
+  .banner_slide .banner_worp .banner .main_banner .banner_button {
     font-size: 12px; }
-  .banner_worp .banner .main_banner .bnarbtn {
+  .banner_slide .banner_worp .banner .main_banner .bnarbtn {
     font-size: 12px; }
   .about_us .about_main .about_sub {
     font-size: 16px; }
@@ -2206,15 +2223,15 @@ header.header {
   .countain_worp .main_counting .counting {
     font-size: 35px;
     font-weight: 600; }
+  .Mission .mainMission .MissionTitle::after {
+    display: none; }
+  .Mission .mainMission .MissionTitle::before {
+    display: none; }
   .Mission .mainMission .MissionTitle .Missionsub {
     font-size: 16px;
     font-weight: 400; }
   .Mission .mainMission .MissionTitle .Missionhead {
     font-size: 25px; }
-  .Mission .mainMission .MissionTitle::before {
-    display: none; }
-  .Mission .mainMission .MissionTitle::after {
-    display: none; }
   .Mission .mainMission .massionPra {
     max-width: 100%; }
   .watch_worp .watchmain .watch .watch_hed {
@@ -2237,15 +2254,15 @@ header.header {
     font-size: 16px; }
   .VOLUNTEER .ovErlay .overlay_header .overarpra {
     font-size: 12px; }
+  .election_worp .counter_bnt a {
+    border-radius: 50px;
+    font-size: 14px;
+    border-bottom: 50px; }
   .election_worp .media_header .media_hed {
     font-size: 30px;
     font-weight: 600; }
   .election_worp .media_header .electio_prag {
     max-width: 100%; }
-  .election_worp .counter_bnt a {
-    border-radius: 50px;
-    font-size: 14px;
-    border-bottom: 50px; }
   .election_worp .countdown .count_main .colon {
     right: -14px; }
   .Goalsworp .media_header .media_hed {
@@ -2277,14 +2294,13 @@ header.header {
   .footer .footer_bottom {
     text-align: center; }
   .countdown .colon {
-    display: block; }
+    display: block;
+    top: 40%; }
   .countdown .count_main {
     font-size: 22px;
     padding: 34px 22px; }
-  .countdown .count_main .count_text {
-    font-size: 45px; }
-  .countdown .colon {
-    top: 40%; }
+    .countdown .count_main .count_text {
+      font-size: 45px; }
   .brand_worp .brand_item img {
     padding: 0; }
   .election_worp .countdown .count_main {
@@ -2303,11 +2319,17 @@ header.header {
 @media (max-width: 420px) {
   .header_top {
     display: none; }
-  .banner_worp .banner .main_banner .banerHed {
+  .banner_slide .banner_worp .banner .main_banner .banerHed {
     font-size: 30px; }
-  .banner_worp .banner .main_banner .banerHed2 {
+  .banner_slide .banner_worp .banner .main_banner .banerHed2 {
     font-size: 18px;
     font-weight: 400; }
+  .banner_slide .banner_worp .banner .main_banner .banner_pra {
+    font-weight: 300; }
+  .banner_slide .banner_worp .banner .main_banner .banner_button {
+    font-size: 12px; }
+  .banner_slide .banner_worp .banner .main_banner .bnarbtn {
+    font-size: 12px; }
   .about_us .about_main .about_head {
     font-size: 30px; }
   .countain_worp .main_counting .counting {
@@ -2319,13 +2341,13 @@ header.header {
     display: none; }
   .Mission .mainMission .MissionTitle::after {
     display: none; }
+  .MEMBER_revew .massionPra {
+    max-width: 100%;
+    margin: 0; }
   .MEMBER_revew .MissionTitle::after {
     display: none; }
   .MEMBER_revew .MissionTitle::before {
     display: none; }
-  .MEMBER_revew .massionPra {
-    max-width: 100%;
-    margin: 0; }
   .watch_worp .watchmain .watch .watch_hed {
     font-size: 18px;
     font-weight: 400; }
@@ -2368,37 +2390,39 @@ header.header {
   .footer_worp .Newsletter .pranews {
     max-width: 100%; }
   .countdown .count_main {
-    margin-bottom: 20px; }
-  .countdown .colon {
-    display: none; }
-  .countdown .count_main {
-    font-size: 30px; }
-  .election_worp .countdown .count_main {
+    font-size: 30px;
     padding: 30px 60px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .countdown .colon {
+    display: none; } }
 
 @media (max-width: 375px) {
   .banner_worp .banner .main_banner .banerHed {
     font-size: 29px; }
-  .banner_worp .banner .main_banner .banner_pra {
+  .banner_slide .banner_worp .banner .main_banner .banerHed {
+    font-size: 40px; }
+  .banner_slide .banner_worp .banner .main_banner .banerHed2 {
+    font-size: 220px;
+    font-weight: 400; }
+  .banner_slide .banner_worp .banner .main_banner .banner_pra {
     display: none; }
-  .banner_worp .banner .main_banner .banner_button {
+  .banner_slide .banner_worp .banner .main_banner .banner_button {
+    font-size: 12px;
     font-size: 10px;
     font-weight: 400;
     padding: 0px 15px; }
-  .banner_worp .banner .main_banner {
-    text-align: center; }
-    .banner_worp .banner .main_banner .bnarbtn {
-      font-size: 10px;
-      font-weight: 400;
-      padding: 0px 15px; }
+  .banner_slide .banner_worp .banner .main_banner .bnarbtn {
+    font-size: 12px;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0px 15px; }
   .countdown .count_main {
     margin-bottom: 20px; }
   .countdown .colon {
     display: none; } }
 
 @media (max-width: 320px) {
-  .banner_worp .banner .main_banner .banerHed {
+  .banner_slide .banner_worp .banner .main_banner .banerHed {
     font-size: 22px;
     margin-bottom: 30px; }
   .about_us .about_main .about_head {

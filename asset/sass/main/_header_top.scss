@@ -118,9 +118,7 @@ header.header {
                         font-weight: 600;
                         text-transform: capitalize;
                         font-family: 'Montserrat', sans-serif;
-                        &:hover {
-                            color: blue;
-                        }
+                        
                         &::before {
                             position  : absolute;
                             content   : "";
@@ -202,7 +200,27 @@ header.header {
                     li {
                         a {
                             color: #fff;
-                            margin: 20px 10px;
+                            &::before {
+                                position  : absolute;
+                                content   : "";
+                                bottom    : 0;
+                                right     : 50%;
+                                width     : 0;
+                                height    : 2px;
+                                background: #eb1b2b;
+                                opacity   : 0;
+                                transition: all 0.5s;
+                            }
+                            &.active,
+                            &:hover {
+                                color: #eb1b2b;
+                                &::before {
+                                    width  : 100%;
+                                    right  : 0;
+                                    opacity: 1;
+                                }
+                            }
+
                         }
                         &:hover {
                             background: transparent;
