@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
@@ -290,6 +289,55 @@ header.header {
     .banner_worp .banner .main_banner .bnarbtn:hover {
       background: #eb1b2b;
       border-color: #eb1b2b; }
+  .banner_worp .banner button.slick-prev {
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    left: -35px; }
+  .banner_worp .banner button.slick-next {
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    right: -35px; }
+  .banner_worp .banner button::before,
+  .banner_worp .banner .slick-next::before,
+  .banner_worp .banner .slick-prev::before {
+    font-family: 'FontAwesome';
+    border: 1px solid #eb1b2b;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 20px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #eb1b2b; }
+  .banner_worp .banner button:hover::before,
+  .banner_worp .banner .slick-next:hover::before,
+  .banner_worp .banner .slick-prev:hover::before {
+    background-color: #eb1b2b;
+    color: #fff; }
+  .banner_worp .banner:hover button.slick-prev {
+    z-index: 3;
+    left: -25px;
+    opacity: 1;
+    z-index: 1;
+    visibility: visible; }
+  .banner_worp .banner:hover button.slick-next {
+    z-index: 3;
+    right: -25px;
+    opacity: 1;
+    z-index: 1;
+    visibility: visible; }
 
 .banner_slide button.slick-prev {
   z-index: 3;
@@ -1397,39 +1445,55 @@ header.header {
       .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items:hover {
         -webkit-box-shadow: 0px 10px 40px 0px rgba(148, 146, 245, 0.2);
         box-shadow: 0px 10px 40px 0px rgba(148, 146, 245, 0.2); }
-    .MEMBER_revew .testmonials_slied .slick-next {
-      visibility: hidden;
-      opacity: 0;
-      display: block;
+    .MEMBER_revew .testmonials_slied button.slick-prev {
+      z-index: 3;
+      width: 40px;
+      height: 40px;
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s;
-      right: -40px; }
-      .MEMBER_revew .testmonials_slied .slick-next::before {
-        content: '→';
-        font-family: 'fontawesome';
-        border-radius: 50px;
-        border: 1px solid #eb1b2b;
-        font-size: 25px;
-        color: #000;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s; }
-      .MEMBER_revew .testmonials_slied .slick-next:hover::before {
-        background-color: #eb1b2b;
-        border-color: #eb1b2b;
-        color: #fff; }
+      opacity: 0;
+      visibility: hidden;
+      left: -35px; }
+    .MEMBER_revew .testmonials_slied button.slick-next {
+      z-index: 3;
+      width: 40px;
+      height: 40px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      opacity: 0;
+      visibility: hidden;
+      right: -35px; }
+    .MEMBER_revew .testmonials_slied button::before,
+    .MEMBER_revew .testmonials_slied .slick-next::before,
+    .MEMBER_revew .testmonials_slied .slick-prev::before {
+      font-family: 'FontAwesome';
+      border: 1px solid #eb1b2b;
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 20px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      color: #eb1b2b; }
+    .MEMBER_revew .testmonials_slied button:hover::before,
+    .MEMBER_revew .testmonials_slied .slick-next:hover::before,
+    .MEMBER_revew .testmonials_slied .slick-prev:hover::before {
+      background-color: #eb1b2b;
+      color: #fff; }
+    .MEMBER_revew .testmonials_slied:hover button.slick-prev {
+      z-index: 3;
+      left: -25px;
+      opacity: 1;
+      z-index: 1;
+      visibility: visible; }
+    .MEMBER_revew .testmonials_slied:hover button.slick-next {
+      z-index: 3;
+      right: -25px;
+      opacity: 1;
+      z-index: 1;
+      visibility: visible; }
 
 .vote_video {
   background-image: url(../imgs/video-image-1.jpg);
@@ -1623,6 +1687,55 @@ header.header {
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1); }
+  .brand_worp button.slick-prev {
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    left: -35px; }
+  .brand_worp button.slick-next {
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    right: -35px; }
+  .brand_worp button::before,
+  .brand_worp .slick-next::before,
+  .brand_worp .slick-prev::before {
+    font-family: 'FontAwesome';
+    border: 1px solid #eb1b2b;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 20px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #eb1b2b; }
+  .brand_worp button:hover::before,
+  .brand_worp .slick-next:hover::before,
+  .brand_worp .slick-prev:hover::before {
+    background-color: #eb1b2b;
+    color: #fff; }
+  .brand_worp:hover button.slick-prev {
+    z-index: 3;
+    left: -25px;
+    opacity: 1;
+    z-index: 1;
+    visibility: visible; }
+  .brand_worp:hover button.slick-next {
+    z-index: 3;
+    right: -25px;
+    opacity: 1;
+    z-index: 1;
+    visibility: visible; }
 
 .Contact_worp {
   background-image: url(../imgs/cbn.jpg);
