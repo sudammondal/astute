@@ -15,28 +15,13 @@
         }
         
     }
-    button.slick-prev {
+    .slick-arrow {
         z-index: 3;
         width: 40px;
         height: 40px;
         transition: all 0.5s;
         opacity: 0;
         visibility: hidden;
-        left: -35px;
-    }
-    button.slick-next {
-        z-index: 3;
-        width: 40px;
-        height: 40px;
-        transition: all 0.5s;
-        opacity: 0;
-        visibility: hidden;
-        right: -35px;
-        
-    }
-    button,
-    .slick-next,
-    .slick-prev {
         &::before {
             font-family: 'FontAwesome';
             border: 1px solid #eb1b2b;
@@ -46,30 +31,36 @@
             transition: all 0.5s;
             color: #eb1b2b;
         }
+
         &:hover {
             &::before {
                 background-color: #eb1b2b;
                 color: #fff;
             }
-            
+        }
+
+        &.slick-prev {
+            left: -60px;
+        }
+
+        &.slick-next {
+            right: -60px;
         }
     }
 
     &:hover {
-        button.slick-prev {
-            z-index: 3;
-            left: -25px;
+        .slick-arrow {
             opacity: 1;
-            z-index: 1;
             visibility: visible;
+            &.slick-prev {
+                left: -25px;
+            }
+
+            &.slick-next {
+                right: -25px;
+            }
         }
-        button.slick-next {
-            z-index: 3;
-            right: -25px;
-            opacity: 1;
-            z-index: 1;
-            visibility: visible;
-        } 
+
     }
    
 }

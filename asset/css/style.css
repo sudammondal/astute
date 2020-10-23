@@ -211,7 +211,7 @@ header.header {
           -webkit-box-shadow: 0px 7px 23px 0px #0000004f;
           box-shadow: 0px 7px 23px 0px #0000004f; }
 
-.banner_worp {
+.banner_slide .banner_worp {
   background-image: url(../imgs/slider-1.jpg);
   text-align: center;
   -webkit-box-align: center;
@@ -222,7 +222,7 @@ header.header {
   background-position: center;
   position: relative;
   padding: 208px 0 198px; }
-  .banner_worp::before {
+  .banner_slide .banner_worp::before {
     content: "";
     top: 0;
     left: 0;
@@ -231,12 +231,12 @@ header.header {
     background-color: #000000;
     position: absolute;
     opacity: 0.7; }
-  .banner_worp .banner .main_banner .banerHed {
+  .banner_slide .banner_worp .banner .main_banner .banerHed {
     margin: 0 0 10px;
     font-size: 66px;
     font-weight: 600;
     color: #fff; }
-  .banner_worp .banner .main_banner .banner_pra {
+  .banner_slide .banner_worp .banner .main_banner .banner_pra {
     max-width: 690px;
     width: 100%;
     font-size: 14px;
@@ -244,9 +244,9 @@ header.header {
     line-height: 1.6;
     color: #fff;
     margin: 0 0 43px 5px; }
-  .banner_worp .banner .main_banner .banner_pra3 {
+  .banner_slide .banner_worp .banner .main_banner .banner_pra3 {
     margin-left: auto; }
-  .banner_worp .banner .main_banner .banner_button {
+  .banner_slide .banner_worp .banner .main_banner .banner_button {
     font-size: 14px;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -265,10 +265,10 @@ header.header {
     text-decoration: none;
     display: inline-block;
     margin-right: 8px; }
-    .banner_worp .banner .main_banner .banner_button:hover {
+    .banner_slide .banner_worp .banner .main_banner .banner_button:hover {
       background: transparent;
       border-color: #fff; }
-  .banner_worp .banner .main_banner .bnarbtn {
+  .banner_slide .banner_worp .banner .main_banner .bnarbtn {
     font-size: 14px;
     outline: none;
     -webkit-box-shadow: none;
@@ -286,112 +286,45 @@ header.header {
     border-radius: 50px;
     text-decoration: none;
     display: inline-block; }
-    .banner_worp .banner .main_banner .bnarbtn:hover {
+    .banner_slide .banner_worp .banner .main_banner .bnarbtn:hover {
       background: #eb1b2b;
       border-color: #eb1b2b; }
-  .banner_worp .banner button.slick-prev {
-    z-index: 3;
-    width: 40px;
-    height: 40px;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    opacity: 0;
-    visibility: hidden;
-    left: -35px; }
-  .banner_worp .banner button.slick-next {
-    z-index: 3;
-    width: 40px;
-    height: 40px;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    opacity: 0;
-    visibility: hidden;
-    right: -35px; }
-  .banner_worp .banner button::before,
-  .banner_worp .banner .slick-next::before,
-  .banner_worp .banner .slick-prev::before {
+
+.banner_slide .slick-arrow {
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden; }
+  .banner_slide .slick-arrow::before {
     font-family: 'FontAwesome';
-    border: 1px solid #eb1b2b;
+    border: 1px solid #fff;
     padding: 10px;
     border-radius: 40px;
     font-size: 20px;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    color: #eb1b2b; }
-  .banner_worp .banner button:hover::before,
-  .banner_worp .banner .slick-next:hover::before,
-  .banner_worp .banner .slick-prev:hover::before {
-    background-color: #eb1b2b;
     color: #fff; }
-  .banner_worp .banner:hover button.slick-prev {
-    z-index: 3;
-    left: -25px;
-    opacity: 1;
-    z-index: 1;
-    visibility: visible; }
-  .banner_worp .banner:hover button.slick-next {
-    z-index: 3;
-    right: -25px;
-    opacity: 1;
-    z-index: 1;
-    visibility: visible; }
+  .banner_slide .slick-arrow:hover::before {
+    background-color: #eb1b2b;
+    border-color: #eb1b2b;
+    color: #fff; }
+  .banner_slide .slick-arrow.slick-prev {
+    left: 10px; }
+  .banner_slide .slick-arrow.slick-next {
+    right: 10px; }
 
-.banner_slide button.slick-prev {
-  z-index: 3;
-  left: 15px;
-  width: 40px;
-  height: 40px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  opacity: 0;
-  visibility: hidden; }
-
-.banner_slide button.slick-next {
-  z-index: 3;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  opacity: 0;
-  visibility: hidden; }
-
-.banner_slide button::before,
-.banner_slide .slick-next::before,
-.banner_slide .slick-prev::before {
-  font-family: 'FontAwesome';
-  border: 1px solid #fff;
-  padding: 10px;
-  border-radius: 40px;
-  font-size: 20px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-
-.banner_slide button:hover::before,
-.banner_slide .slick-next:hover::before,
-.banner_slide .slick-prev:hover::before {
-  background-color: #eb1b2b;
-  border-color: #eb1b2b; }
-
-.banner_slide:hover button.slick-prev {
-  z-index: 3;
-  left: 30px;
+.banner_slide:hover .slick-arrow {
   opacity: 1;
-  z-index: 1;
   visibility: visible; }
-
-.banner_slide:hover button.slick-next {
-  z-index: 3;
-  right: 30px;
-  opacity: 1;
-  z-index: 1;
-  visibility: visible; }
+  .banner_slide:hover .slick-arrow.slick-prev {
+    left: 25px; }
+  .banner_slide:hover .slick-arrow.slick-next {
+    right: 25px; }
 
 .about_us {
   padding: 95px 0;
@@ -1445,7 +1378,7 @@ header.header {
       .MEMBER_revew .testmonials_slied .main_slieda_ttstmonials .test_slid_items:hover {
         -webkit-box-shadow: 0px 10px 40px 0px rgba(148, 146, 245, 0.2);
         box-shadow: 0px 10px 40px 0px rgba(148, 146, 245, 0.2); }
-    .MEMBER_revew .testmonials_slied button.slick-prev {
+    .MEMBER_revew .testmonials_slied .slick-arrow {
       z-index: 3;
       width: 40px;
       height: 40px;
@@ -1453,47 +1386,31 @@ header.header {
       -o-transition: all 0.5s;
       transition: all 0.5s;
       opacity: 0;
-      visibility: hidden;
-      left: -35px; }
-    .MEMBER_revew .testmonials_slied button.slick-next {
-      z-index: 3;
-      width: 40px;
-      height: 40px;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      opacity: 0;
-      visibility: hidden;
-      right: -35px; }
-    .MEMBER_revew .testmonials_slied button::before,
-    .MEMBER_revew .testmonials_slied .slick-next::before,
-    .MEMBER_revew .testmonials_slied .slick-prev::before {
-      font-family: 'FontAwesome';
-      border: 1px solid #eb1b2b;
-      padding: 10px;
-      border-radius: 40px;
-      font-size: 20px;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      color: #eb1b2b; }
-    .MEMBER_revew .testmonials_slied button:hover::before,
-    .MEMBER_revew .testmonials_slied .slick-next:hover::before,
-    .MEMBER_revew .testmonials_slied .slick-prev:hover::before {
-      background-color: #eb1b2b;
-      color: #fff; }
-    .MEMBER_revew .testmonials_slied:hover button.slick-prev {
-      z-index: 3;
-      left: -25px;
+      visibility: hidden; }
+      .MEMBER_revew .testmonials_slied .slick-arrow::before {
+        font-family: 'FontAwesome';
+        border: 1px solid #eb1b2b;
+        padding: 10px;
+        border-radius: 40px;
+        font-size: 20px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        color: #eb1b2b; }
+      .MEMBER_revew .testmonials_slied .slick-arrow:hover::before {
+        background-color: #eb1b2b;
+        color: #fff; }
+      .MEMBER_revew .testmonials_slied .slick-arrow.slick-prev {
+        left: -60px; }
+      .MEMBER_revew .testmonials_slied .slick-arrow.slick-next {
+        right: -60px; }
+    .MEMBER_revew .testmonials_slied:hover .slick-arrow {
       opacity: 1;
-      z-index: 1;
       visibility: visible; }
-    .MEMBER_revew .testmonials_slied:hover button.slick-next {
-      z-index: 3;
-      right: -25px;
-      opacity: 1;
-      z-index: 1;
-      visibility: visible; }
+      .MEMBER_revew .testmonials_slied:hover .slick-arrow.slick-prev {
+        left: -25px; }
+      .MEMBER_revew .testmonials_slied:hover .slick-arrow.slick-next {
+        right: -25px; }
 
 .vote_video {
   background-image: url(../imgs/video-image-1.jpg);
@@ -1687,7 +1604,7 @@ header.header {
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1); }
-  .brand_worp button.slick-prev {
+  .brand_worp .slick-arrow {
     z-index: 3;
     width: 40px;
     height: 40px;
@@ -1695,47 +1612,31 @@ header.header {
     -o-transition: all 0.5s;
     transition: all 0.5s;
     opacity: 0;
-    visibility: hidden;
-    left: -35px; }
-  .brand_worp button.slick-next {
-    z-index: 3;
-    width: 40px;
-    height: 40px;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    opacity: 0;
-    visibility: hidden;
-    right: -35px; }
-  .brand_worp button::before,
-  .brand_worp .slick-next::before,
-  .brand_worp .slick-prev::before {
-    font-family: 'FontAwesome';
-    border: 1px solid #eb1b2b;
-    padding: 10px;
-    border-radius: 40px;
-    font-size: 20px;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    color: #eb1b2b; }
-  .brand_worp button:hover::before,
-  .brand_worp .slick-next:hover::before,
-  .brand_worp .slick-prev:hover::before {
-    background-color: #eb1b2b;
-    color: #fff; }
-  .brand_worp:hover button.slick-prev {
-    z-index: 3;
-    left: -25px;
+    visibility: hidden; }
+    .brand_worp .slick-arrow::before {
+      font-family: 'FontAwesome';
+      border: 1px solid #eb1b2b;
+      padding: 10px;
+      border-radius: 40px;
+      font-size: 20px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      color: #eb1b2b; }
+    .brand_worp .slick-arrow:hover::before {
+      background-color: #eb1b2b;
+      color: #fff; }
+    .brand_worp .slick-arrow.slick-prev {
+      left: -60px; }
+    .brand_worp .slick-arrow.slick-next {
+      right: -60px; }
+  .brand_worp:hover .slick-arrow {
     opacity: 1;
-    z-index: 1;
     visibility: visible; }
-  .brand_worp:hover button.slick-next {
-    z-index: 3;
-    right: -25px;
-    opacity: 1;
-    z-index: 1;
-    visibility: visible; }
+    .brand_worp:hover .slick-arrow.slick-prev {
+      left: -25px; }
+    .brand_worp:hover .slick-arrow.slick-next {
+      right: -25px; }
 
 .Contact_worp {
   background-image: url(../imgs/cbn.jpg);
