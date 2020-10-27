@@ -2143,7 +2143,9 @@ header.header {
     margin-bottom: 20px;
     padding: 34px 35px; }
     .election_worp .countdown .count_main .colon {
-      right: -15px; } }
+      right: -15px; }
+  .up_iconFixd {
+    display: none; } }
 
 @media (max-width: 768px) {
   .header_top .top_head .contac a {
