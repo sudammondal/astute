@@ -7,17 +7,19 @@ $(document).ready(function () {
       $(".header").removeClass("fixedMenu");
     }
   });
-  // banner slider //
+  // header js //
 
-  ! function (e) {
-    "use strict";
-    $('.banner_slide').slick({
-      autoplay: true
-      , arrows: true
-      , autoplaySpeed: 3000,
-      easing: 'linear'
-    });
-  }(jQuery)
+  // banner slider //
+    ! function (e) {
+      "use strict";
+      $('.banner_slide').slick({
+        autoplay: true
+        , arrows: true
+        , autoplaySpeed: 3000,
+        easing: 'linear'
+      });
+    }(jQuery)
+  // banner slider //
 
 
   // counting ja //
@@ -90,7 +92,7 @@ $(document).ready(function () {
       }
     ]
   });
-
+  
   $('.sssyour-class').slick({
     arrows: true,
     autoplay: true,
@@ -129,6 +131,7 @@ $(document).ready(function () {
       }
     ]
   });
+
   //===============instgam==========//
   $('.slider_main, .brabd_slied').slick({
     arrows: true,
@@ -171,7 +174,8 @@ $(document).ready(function () {
       }
     ]
   });
-  //=====================countundoen ========//
+
+  //=============== latest news ==========//
   $('.latest_news_slied').slick({
     arrows: false,
     autoplay: true,
@@ -212,7 +216,7 @@ $(document).ready(function () {
   });
 
 
-
+  //=====================countundoen =================//
   var countDownDate = new Date("Jan 1, 2021 15:37:25").getTime();
   // Update the count down every 1 second
   var x = setInterval(function () {
@@ -242,10 +246,8 @@ $(document).ready(function () {
   }, 1000);
 
   // ========== filtering========== //
-
   function isoTopActive() {
     // Iso top js
-
     $('.filtering_item_row').imagesLoaded(function () {
       $(".filtering_item_row").isotope({
         itemSelector: '.filter_items',
@@ -269,6 +271,7 @@ $(document).ready(function () {
     });
   }
   isoTopActive();   
+   // ========== filtering========== //
 
   /*---------LIGHT-BOX js-----------*/
   function lightBoxImages() {
@@ -285,11 +288,10 @@ $(document).ready(function () {
     }
   }
   lightBoxImages();
+  /*---------LIGHT-BOX js-----------*/
 
 
-  // pop up
-
-
+  //======= pop up===== //
   function videoPopup() {
     if ($('.popup-youtube').length) {
       $('.popup-youtube').magnificPopup({
@@ -301,8 +303,9 @@ $(document).ready(function () {
     }
   }
   videoPopup();
+  //======= pop up===== //
 
-  // up icon js //
+  //===== up icon js===== //
   $('.up_icon a[href^="#"').on('click', function (event) {
     var target = $(this.getAttribute('href'));
     if (target.length) {
@@ -312,14 +315,17 @@ $(document).ready(function () {
       }, 2000);
     }
   });
+  //===== up icon js===== //
 
+  //==== viedo player js =====//
   function myFunction() {
     var x = document.getElementById("myVideo").autoplay;
     document.getElementById("demo").innerHTML = x;
   }
+  //==== viedo player js =====//
 
-
-  
+  //===== animation =====//
   new WOW().init();
+  //===== animation =====//
 
 });
