@@ -7,6 +7,17 @@ $(document).ready(function () {
       $(".header").removeClass("fixedMenu");
     }
   });
+  // banner slider //
+
+  ! function (e) {
+    "use strict";
+    $('.banner_slide').slick({
+      autoplay: true
+      , arrows: true
+      , autoplaySpeed: 3000,
+      easing: 'linear'
+    });
+  }(jQuery)
 
 
   // counting ja //
@@ -308,16 +319,7 @@ $(document).ready(function () {
   }
 
 
-  ! function (e) {
-    "use strict";
-    $('.banner_slide').slick({
-      autoplay: true
-      , arrows: true
-      , autoplaySpeed: 3000,
-      easing: 'linear'
-    });
-  }(jQuery)
-
+  
   new WOW().init();
 
 });
