@@ -313,7 +313,7 @@ $(document).ready(function () {
     $('.banner_slide').slick({
       autoplay: true
       , arrows: true
-      , autoplaySpeed: 2000,
+      , autoplaySpeed: 1500,
       easing: 'linear'
     });
   }(jQuery)
